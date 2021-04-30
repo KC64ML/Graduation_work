@@ -1,0 +1,276 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    >
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="오늘의 동화속 English 한 문장"
+        android:fontFamily="@font/happytfruit"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:text="     The sea flows to the east."
+        android:fontFamily="@font/happytfruit"
+        />
+
+
+
+
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/dokki11"
+        android:layout_weight="1"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/gore11"
+        android:layout_weight="1"/>
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/redhat11"
+        android:layout_weight="1"/>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/soup11"
+        android:layout_weight="1"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:text="한국동화"
+        android:fontFamily="@font/happytfruit"
+       />
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/woddenhorse" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/rat" />
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bremen1" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/rumpel" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:text="외국동화"
+        android:fontFamily="@font/happytfruit"
+        />
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/janghwa" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/jackand" />
+
+
+
+        <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/cindella" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/backsul" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:text="추천동화"
+        android:fontFamily="@font/happytfruit"
+        />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/imageButton21"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/tokki" />
+
+        <ImageButton
+            android:id="@+id/imageButton22"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bob" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/kambodia" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hankuk" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:text="이달의 동화"
+        android:fontFamily="@font/happytfruit"
+        />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/imageButton17"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/min" />
+
+        <ImageButton
+            android:id="@+id/imageButton18"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/namu" />
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/onehund" />
+
+        <ImageButton
+            android:id="@+id/imageButton20"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/sunflower" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:text="신작동화"
+        android:fontFamily="@font/happytfruit"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/moving_kkot" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hello" />
+
+
+</LinearLayout>
+</ScrollView>
