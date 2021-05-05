@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "image11"
+rootProject.name = "MainPage"

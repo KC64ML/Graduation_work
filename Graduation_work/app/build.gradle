@@ -8,8 +8,8 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.image11"
-        minSdkVersion 23
+        applicationId "com.example.mainpage"
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
