@@ -53,6 +53,7 @@
                 </Button>
 
                 <Button
+                    android:id="@+id/pill"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="15dp"
@@ -65,12 +66,13 @@
                 </Button>
 
                 <Button
+                    android:id="@+id/dongwha"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="15dp"
                     android:backgroundTint="@color/FloralWhite"
                     android:drawableTop="@drawable/mortarboard"
-                    android:text="교육사이트"
+                    android:text="동화"
                     android:textColor="@color/black"
                     android:textSize="13dp"
 
