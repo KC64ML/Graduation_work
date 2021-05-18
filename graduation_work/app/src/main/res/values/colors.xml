@@ -7,7 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
     <color name="FloralWhite">#fffaf0</color>
     <color name="Azure">#f0ffff	</color>
     <color name="Cornsilk">#fff8dc</color>
+=======
+    <color name="Cornsilk">#fff8dc</color>
+    <color name="FloralWhite">#fffaf0</color>
+>>>>>>> 06bb0fb1f86ed43bc375b821e81b6709da7b89e6
 </resources>

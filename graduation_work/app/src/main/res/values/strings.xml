@@ -1,5 +1,12 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">image11</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+    <string name="app_name">ALARM</string>
+    <string name="change_time">시간 재설정</string>
+    <string name="ona_alarm">알람켜기</string>
+    <string name="on_alarm" />
+>>>>>>> 06bb0fb1f86ed43bc375b821e81b6709da7b89e6
 </resources>

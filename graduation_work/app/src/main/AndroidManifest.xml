@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Image11">
-        <activity android:name=".SubActivity4"></activity>
-        <activity android:name=".SubActivity3" />
-        <activity android:name=".SubActivity2" />
-        <activity android:name=".SubActivity1" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".SubActivity4" />
+        <activity android:name=".SubActivity3" />
+        <activity android:name=".SubActivity2" />
+        <activity android:name=".SubActivity1" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity2">
+
         </activity>
     </application>
 
