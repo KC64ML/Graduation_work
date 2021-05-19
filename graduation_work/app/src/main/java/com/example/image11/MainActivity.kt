@@ -19,6 +19,13 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
 
+<<<<<<< HEAD
+    class MainActivity : AppCompatActivity() {
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main)
+        }
+=======
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -98,5 +105,6 @@ class MainActivity : AppCompatActivity() {
         private const val ONOFF_KEY = "onOff"
         private const val ALARM_REQUEST_CODE = 1000
 
+>>>>>>> 06bb0fb1f86ed43bc375b821e81b6709da7b89e6
     }
 }
