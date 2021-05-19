@@ -15,6 +15,7 @@ class MainActivity3 : AppCompatActivity() {
 
             val impt1 = findViewById<Button>(R.id.pill);
             val impt2 = findViewById<Button>(R.id.dongwha);
+            val impt3 = findViewById<Button>(R.id.study)
 
             impt1.setOnClickListener{
                 val intent = Intent(this, MainActivity::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
@@ -30,7 +31,13 @@ class MainActivity3 : AppCompatActivity() {
                 startActivity(intent);
 
             }
+        impt3 .setOnClickListener{
 
+            val intent = Intent(this, MainActivity4::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
+
+            startActivity(intent);
+
+        }
 
 
 

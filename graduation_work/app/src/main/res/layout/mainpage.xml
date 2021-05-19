@@ -74,7 +74,7 @@
                     android:drawableTop="@drawable/mortarboard"
                     android:text="동화"
                     android:textColor="@color/black"
-                    android:textSize="13dp"
+                    android:textSize="19dp"
 
                     >
 
@@ -89,11 +89,12 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/study"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:backgroundTint="@color/FloralWhite"
                     android:drawableTop="@drawable/group"
-                    android:text="커뮤니티"
+                    android:text="교육사이트이동"
                     android:textColor="@color/black"
                     android:textSize="16dp">
 
