@@ -21,8 +21,16 @@
         <activity android:name=".SubActivity3" />
         <activity android:name=".SubActivity2" />
         <activity android:name=".SubActivity1" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".MainActivity6" />
+        <activity android:name=".MainActivity5"></activity>
+        <activity android:name=".MapActivity"></activity>
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD6Qs6yeZmPQz4hlZvQgy2EhiCbRFfdc3g" />
     </application>
 
 </manifest>

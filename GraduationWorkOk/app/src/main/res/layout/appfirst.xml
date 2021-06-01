@@ -1,0 +1,129 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+	<ScrollView
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+			<View
+				android:background="@drawable/bkwhite2"
+				 android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_width="412dp"
+				android:layout_height="870dp" />
+
+
+			<RelativeLayout
+				android:layout_marginTop="0dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<ImageView
+					android:src="@drawable/background1"
+
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="422dp"
+					android:layout_height="870dp" />
+
+			</RelativeLayout>
+
+			<View
+				android:background="@drawable/bkwhite4"
+				 android:alpha="0.3"
+				 android:layout_marginStart="-625dp"
+				android:layout_marginTop="860dp"
+				android:layout_width="1088dp"
+				android:layout_height="10dp" />
+
+			<View android:id="@+id/firstButton"
+				android:layout_width="84dp"
+				android:layout_height="90dp"
+				android:layout_marginStart="317dp"
+				android:layout_marginTop="730dp"
+				android:alpha="0.71"
+				android:background="@drawable/circle1" />
+
+
+			<RelativeLayout
+				android:layout_marginTop="751.29516601562dp"
+				android:layout_marginStart="326.39404296875dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<ImageView
+					android:layout_width="53.60595703125dp"
+					android:layout_height="53.371459960938dp"
+					android:layout_marginStart="7dp"
+					android:layout_marginTop="0dp"
+					android:src="@drawable/hwasal12" />
+
+				<ImageView
+
+					android:layout_width="67.60595703125dp"
+					android:layout_height="44.136474609375dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="3dp"
+
+					android:src="@drawable/nemo1" />
+
+			</RelativeLayout>
+
+
+			<RelativeLayout
+				android:layout_marginTop="318dp"
+				android:layout_marginStart="1dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<TextView
+                    android:fontFamily="@font/font12"
+					android:textSize="40sp"
+					android:textColor="@color/______________color"
+					android:layout_marginLeft="8dp"
+					android:layout_marginTop="-4dp"
+					android:layout_width="370dp"
+					android:layout_height="86dp"
+					android:text="지적 장애인을 위한 앱"
+					 />
+
+				<TextView
+                    android:fontFamily="@font/font12"
+					android:textSize="45sp"
+					android:textColor="@color/___________color"
+					android:layout_marginLeft="0dp"
+					android:layout_marginTop="134dp"
+					android:layout_width="340dp"
+					android:layout_height="96.5dp"
+					android:text="적지 어플입니다."
+					 />
+
+			</RelativeLayout>
+
+			<View
+				android:background="@drawable/bkwhite3"
+				 android:alpha="0.3"
+				 android:layout_marginStart="-11dp"
+				android:layout_marginTop="624dp"
+				android:layout_width="412dp"
+				android:layout_height="10dp" />
+
+			<View
+				android:background="@drawable/bkwhite1"
+				 android:layout_marginStart="0dp"
+				android:layout_marginTop="624dp"
+				android:layout_width="412dp"
+				android:layout_height="11dp" />
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>

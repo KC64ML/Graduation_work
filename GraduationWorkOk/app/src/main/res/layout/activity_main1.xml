@@ -1,0 +1,301 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="442dp"
+            android:layout_height="223dp"
+            android:gravity="top" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="gold axe silver axe"
+            android:fontFamily="@font/happytfruit"
+
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+
+                app:srcCompat="@android:drawable/checkbox_on_background" />
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@android:drawable/btn_star" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/joenbin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="맞춤 추천"
+            android:fontFamily="@font/happytfruit"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/happytfruit"
+                app:srcCompat="@drawable/rumpel" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/rat" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/woddenhorse" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bremen1" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="39dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="RUMPEL"
+                android:fontFamily="@font/happytfruit"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/happytfruit"
+                android:layout_weight="1"
+                android:text="RATStory" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/happytfruit"
+                android:text="woddenHorse" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/happytfruit"
+                android:text="Bremen" />
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/imageButton17"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/min" />
+
+            <ImageButton
+                android:id="@+id/imageButton18"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/namu" />
+
+            <ImageButton
+                android:id="@+id/imageButton19"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/onehund" />
+
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sunflower" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="39dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="민들레이야기"
+                android:fontFamily="@font/happytfruit"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/happytfruit"
+                android:layout_weight="1"
+                android:text="선녀와 나무꾼" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/happytfruit"
+                android:text="한국전래동화" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/happytfruit"
+                android:text="해바라기" />
+
+
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/datgle2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="9:30 :동화책 추천좀 해주세욤"
+            android:fontFamily="@font/happytfruit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="10:20:Bremen 재밌음"
+            android:fontFamily="@font/happytfruit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="3:30:이솝이야기도 올려주세요"
+            android:fontFamily="@font/happytfruit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/happytfruit"
+            android:text="4:25:대왕고래 넘 감동적 ㅜㅜ"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/happytfruit"
+            android:text="6:25:신데렐라도 올려주세요 !!"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/happytfruit"
+            android:text="7:02 솔로몬이야기 감동적"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hello" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
