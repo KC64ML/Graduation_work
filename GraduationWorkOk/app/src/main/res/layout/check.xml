@@ -2,11 +2,11 @@
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
 
 	<ScrollView
-		android:layout_width="wrap_content" 
+		android:layout_width="wrap_content"
 		android:layout_height="match_parent" >
 
 		<RelativeLayout
-			android:layout_width="wrap_content" 
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content" >
 
 			<TextView
@@ -18,7 +18,7 @@
 				android:layout_width="110dp"
 				android:layout_height="65dp"
 				android:text="회원 가입"
-				 />
+				/>
 
 
 			<RelativeLayout
@@ -42,25 +42,25 @@
 			<ImageView
 				android:src="@drawable/morem1"
 
-				 android:layout_marginStart="0dp"
+				android:layout_marginStart="0dp"
 				android:layout_marginTop="97dp"
 				android:layout_width="404dp"
 				android:layout_height="10dp" />
 
 			<EditText
 
-				android:textSize="20sp"
-				android:textColor="@color/_____color"
-				android:layout_marginLeft="13dp"
-				android:layout_marginTop="171dp"
+				android:id="@+id/check_Username"
 				android:layout_width="250dp"
 				android:layout_height="43dp"
-			android:hint="아이디"
-				 />
+				android:layout_marginLeft="13dp"
+				android:layout_marginTop="171dp"
+				android:hint="아이디"
+				android:textColor="@color/_____color"
+				android:textSize="20sp" />
 
 			<View android:id="@+id/copy"
 				android:background="@drawable/shape6"
-				 android:layout_marginStart="261dp"
+				android:layout_marginStart="261dp"
 				android:layout_marginTop="158dp"
 				android:layout_width="135dp"
 				android:layout_height="49dp" />
@@ -79,11 +79,12 @@
 			<EditText
 
 
+				android:id="@+id/check_password"
 				android:layout_width="400dp"
 				android:layout_height="43dp"
 				android:layout_marginLeft="13dp"
 				android:layout_marginTop="245dp"
-		    	android:hint="비밀번호"
+				android:hint="비밀번호"
 				android:textColor="@color/_____color"
 				android:textSize="20sp" />
 
@@ -97,63 +98,66 @@
 				android:hint="비밀번호 확인"
 				android:textColor="@color/_____color"
 				android:textSize="20sp" />
+
 			<EditText
 
+				android:id="@+id/check_email"
 				android:layout_width="400dp"
 				android:layout_height="43dp"
 				android:layout_marginLeft="13dp"
 				android:layout_marginTop="350dp"
-		       android:hint="이메일"
+				android:hint="이메일"
 				android:textColor="@color/_____color"
 				android:textSize="20sp" />
+
 			<EditText
 
 
+				android:id="@+id/check_Family"
 				android:layout_width="400dp"
 				android:layout_height="43dp"
 				android:layout_marginLeft="13dp"
 				android:layout_marginTop="398dp"
-			    android:hint="이름 (실명입력)"
+				android:hint="성별"
 				android:textColor="@color/_____color"
 				android:textSize="20sp" />
 
 			<EditText
 
-				android:textSize="20sp"
-				android:textColor="@color/_____color"
+				android:id="@+id/check_phone"
+				android:layout_width="400dp"
+				android:layout_height="43dp"
 				android:layout_marginLeft="14dp"
 				android:layout_marginTop="471dp"
-				android:layout_width="400dp"
-				android:layout_height="43dp"
 				android:hint="휴대전화번호 ('-') 제외"
+				android:textColor="@color/_____color"
 
-				 />
-
+				android:textSize="20sp" />
 
 
 			<EditText
 
-				android:textSize="18sp"
-				android:textColor="@color/_____color"
-				android:layout_marginLeft="13dp"
-				android:layout_marginTop="544dp"
+				android:id="@+id/check_birth"
 				android:layout_width="177dp"
 				android:layout_height="43dp"
+				android:layout_marginLeft="13dp"
+				android:layout_marginTop="544dp"
 				android:hint="생년원일 (8자리입력)"
+				android:textColor="@color/_____color"
 
-				 />
+				android:textSize="18sp" />
 
 			<EditText
 
-				android:textSize="18sp"
-				android:textColor="@color/_____color"
-				android:layout_marginLeft="13dp"
-				android:layout_marginTop="600dp"
+				android:id="@+id/check_age"
 				android:layout_width="400dp"
 				android:layout_height="43dp"
+				android:layout_marginLeft="13dp"
+				android:layout_marginTop="600dp"
 				android:hint="나이"
+				android:textColor="@color/_____color"
 
-				/>
+				android:textSize="18sp" />
 
 			<TextView
 
@@ -209,15 +213,17 @@
 
 
 			<RelativeLayout
+				android:id="@+id/input_signup"
 				android:layout_marginTop="767dp"
 				android:layout_marginStart="2dp"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				>
 
-				<View android:id="@+id/join"
+				<View
+					android:id="@+id/join131"
 					android:background="@drawable/shape7"
-					 android:layout_marginStart="0dp"
+					android:layout_marginStart="0dp"
 					android:layout_marginTop="0dp"
 					android:layout_width="410dp"
 					android:layout_height="61dp" />
@@ -231,7 +237,7 @@
 					android:layout_width="102dp"
 					android:layout_height="86.5dp"
 					android:text="회원 가입"
-					 />
+					/>
 
 			</RelativeLayout>
 
