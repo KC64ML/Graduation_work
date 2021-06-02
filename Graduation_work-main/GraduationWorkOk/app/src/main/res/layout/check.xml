@@ -49,14 +49,14 @@
 
 			<EditText
 
-				android:id="@+id/check_username"
-				android:layout_width="250dp"
-				android:layout_height="43dp"
+				android:textSize="20sp"
+				android:textColor="@color/_____color"
 				android:layout_marginLeft="13dp"
 				android:layout_marginTop="171dp"
-				android:hint="아이디"
-				android:textColor="@color/_____color"
-				android:textSize="20sp" />
+				android:layout_width="250dp"
+				android:layout_height="43dp"
+			android:hint="아이디"
+				 />
 
 			<View android:id="@+id/copy"
 				android:background="@drawable/shape6"
@@ -79,19 +79,17 @@
 			<EditText
 
 
-				android:id="@+id/check_Password"
 				android:layout_width="400dp"
 				android:layout_height="43dp"
 				android:layout_marginLeft="13dp"
 				android:layout_marginTop="245dp"
-				android:hint="비밀번호"
+		    	android:hint="비밀번호"
 				android:textColor="@color/_____color"
 				android:textSize="20sp" />
 
 			<EditText
 
 
-				android:id="@+id/findpassword"
 				android:layout_width="400dp"
 				android:layout_height="43dp"
 				android:layout_marginLeft="13dp"
@@ -99,15 +97,13 @@
 				android:hint="비밀번호 확인"
 				android:textColor="@color/_____color"
 				android:textSize="20sp" />
-
 			<EditText
 
-				android:id="@+id/check_email"
 				android:layout_width="400dp"
 				android:layout_height="43dp"
 				android:layout_marginLeft="13dp"
 				android:layout_marginTop="350dp"
-				android:hint="이메일"
+		       android:hint="이메일"
 				android:textColor="@color/_____color"
 				android:textSize="20sp" />
 			<EditText
@@ -227,6 +223,7 @@
 					android:layout_height="61dp" />
 
 				<TextView
+
 					android:textSize="25sp"
 					android:textColor="@color/_______ek1_color"
 					android:layout_marginLeft="160dp"

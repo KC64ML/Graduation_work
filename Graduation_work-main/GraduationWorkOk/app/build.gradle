@@ -63,4 +63,11 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:17.1.0'
 
     implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'org.jetbrains.anko:anko-commons:0.10.2'
+    implementation 'org.jetbrains.anko:anko-appcompat-v7-commons:0.10.2'
+
+    //Retrofit
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
 }

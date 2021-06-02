@@ -34,6 +34,8 @@
         <activity android:name=".MainActivity6" />
         <activity android:name=".MainActivity4" />
         <activity android:name=".MainActivity2" />
+        <activity android:name=".CalenderActivity"></activity>
+        <activity android:name=".pass"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

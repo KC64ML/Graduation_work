@@ -14,6 +14,7 @@ class MainPage : AppCompatActivity() {
         val imst2 = findViewById<View>(R.id.locaion1);
         val imst3 = findViewById<View>(R.id.donghwa1);
         val imst4 = findViewById<View>(R.id.pill12);
+        val diary = findViewById<View>(R.id.diary123)
 
 
         imst1.setOnClickListener{
@@ -45,6 +46,11 @@ class MainPage : AppCompatActivity() {
 
             startActivity(intent);
 
+        }
+
+        diary.setOnClickListener {
+            val intent = Intent(this,pass::class.java)
+            startActivity(intent)
         }
     }
 }
