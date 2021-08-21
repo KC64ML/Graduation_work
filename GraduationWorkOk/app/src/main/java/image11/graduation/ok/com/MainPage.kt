@@ -52,6 +52,6 @@ class MainPage : AppCompatActivity() {
             val intent = Intent(this,pass::class.java)
             startActivity(intent)
         }
-        System.out.println("test");
+        System.out.println("test_2");
     }
 }
