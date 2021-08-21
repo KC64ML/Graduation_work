@@ -48,6 +48,6 @@ class AlarmReceiver: BroadcastReceiver() {
 
         }
 
-    }
+    }// 변경확인
 
 }
