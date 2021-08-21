@@ -173,6 +173,6 @@ class CalenderActivity : AppCompatActivity() {
         override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
             db?.execSQL("drop table if exists DiaryTBL")
             onCreate(db)
-        }
+        } // 변경확인~~~
     }
 }
