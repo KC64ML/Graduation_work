@@ -53,5 +53,6 @@ class MainPage : AppCompatActivity() {
             startActivity(intent)
         }
         System.out.println("test_2");
+        System.out.println("test_3");
     }
 }
