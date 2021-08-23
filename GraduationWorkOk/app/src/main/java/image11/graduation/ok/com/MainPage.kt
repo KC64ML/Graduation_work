@@ -57,6 +57,7 @@ class MainPage : AppCompatActivity() {
         System.out.println("test_4");
         System.out.println("test_5");
         System.out.printf("안뇽!ㅎㅎ");
+        System.out.println("Today's Last Test.. Have a Good day mate..!?!>!");
         
     }
 }
