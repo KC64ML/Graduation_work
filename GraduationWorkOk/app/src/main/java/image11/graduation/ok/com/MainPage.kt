@@ -57,6 +57,7 @@ class MainPage : AppCompatActivity() {
         System.out.println("test_4");
         System.out.println("test_5");
         System.out.println("test_6");
+        System.out.println("test_7");
 
         
     }
