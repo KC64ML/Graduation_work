@@ -23,7 +23,7 @@ class MainActivity3 : AppCompatActivity() {
             }
 
 
-
+//변경확인
         }
     }
 
