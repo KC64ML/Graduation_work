@@ -123,6 +123,6 @@ class MainActivity4 : AppCompatActivity() {
 
         }
 
-    }
+    }//변경확인
 }
 
