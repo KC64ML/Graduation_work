@@ -27,6 +27,7 @@ class MainPage : AppCompatActivity() {
 
         game2.setOnClickListener {
             val intent = Intent(this,Memory::class.java)
+            startActivity(intent);
         }
 
         imst2.setOnClickListener{
