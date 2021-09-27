@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
+
 class MainPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,7 +16,7 @@ class MainPage : AppCompatActivity() {
         val imst3 = findViewById<View>(R.id.donghwa1);
         val imst4 = findViewById<View>(R.id.pill12);
         val diary = findViewById<View>(R.id.diary123)
-
+        val game2 = findViewById<View>(R.id.game2)
 
         imst1.setOnClickListener{
             val intent = Intent(this, MainActivity4::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
@@ -24,7 +25,9 @@ class MainPage : AppCompatActivity() {
 
         }
 
-
+        game2.setOnClickListener {
+            val intent = Intent(this,Memory::class.java)
+        }
 
         imst2.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
@@ -52,17 +55,6 @@ class MainPage : AppCompatActivity() {
             val intent = Intent(this,pass::class.java)
             startActivity(intent)
         }
-        System.out.println("test_2");
-        System.out.println("test_3");
-        System.out.println("test_4");
-        System.out.println("test_5");
-        System.out.println("test_6");
-        System.out.println("test_7");
-        System.out.println("test_8");
-        System.out.println("test_9");
-        System.out.println("test_10");
-        System.out.println("test_11");
-        System.out.println("test_21");
 
 
 

@@ -14,8 +14,7 @@
 				android:layout_width="412dp"
 				android:layout_height="870dp"
 				android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
-				 />
+				android:layout_marginTop="0dp" />
 
 			<ImageView
 				android:src="@drawable/disorder1"
@@ -63,13 +62,14 @@ android:fontFamily="@font/font12"
 				android:text="교육 사이트"
 				 />
 
-			<ImageView android:id="@+id/diary123"
-				android:src="@drawable/diary1"
-
-				 android:layout_marginStart="207dp"
-				android:layout_marginTop="319dp"
+			<ImageView
+				android:id="@+id/diary123"
 				android:layout_width="98dp"
-				android:layout_height="92dp" />
+
+				android:layout_height="92dp"
+				android:layout_marginStart="207dp"
+				android:layout_marginTop="319dp"
+				android:src="@drawable/diary1" />
 
 			<TextView
 android:fontFamily="@font/font12"
@@ -82,13 +82,14 @@ android:fontFamily="@font/font12"
 				android:text="일기장"
 				 />
 
-			<ImageView android:id="@+id/game2"
-				android:src="@drawable/game1"
-
-				 android:layout_marginStart="315dp"
-				android:layout_marginTop="333dp"
+			<ImageView
+				android:id="@+id/game2"
 				android:layout_width="75dp"
-				android:layout_height="56dp" />
+
+				android:layout_height="56dp"
+				android:layout_marginStart="315dp"
+				android:layout_marginTop="333dp"
+				android:src="@drawable/game1" />
 
 			<TextView
 android:fontFamily="@font/font12"

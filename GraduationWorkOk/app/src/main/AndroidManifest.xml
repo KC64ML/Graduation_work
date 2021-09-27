@@ -28,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+      
         <activity android:name=".SubActivity4" />
         <activity android:name=".SubActivity3" />
         <activity android:name=".SubActivity2" />
@@ -37,7 +38,7 @@
         <activity android:name=".MainActivity2" />
         <activity android:name=".CalenderActivity"></activity>
         <activity android:name=".pass"></activity>
-
+        <activity android:name=".Memory"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_map" />
