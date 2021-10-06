@@ -15,13 +15,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aoppart4chapter03" >
-        <activity android:name=".Regist" >
-        </activity>
-        <activity android:name=".MainPage" />
+
+
         <activity android:name=".login" />
         <activity android:name=".MainActivity" />
+
         <activity android:name=".MapActivity" />
-        <activity android:name=".MainActivity3" >
+        <activity android:name=".MainPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,6 +39,10 @@
         <activity android:name=".CalenderActivity"></activity>
         <activity android:name=".pass"></activity>
         <activity android:name=".Memory"></activity>
+        <activity android:name=".survey"></activity>
+        <activity android:name=".survey2"></activity>
+        <activity android:name=".survey3"></activity>
+        <activity android:name=".survey4"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_map" />

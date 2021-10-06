@@ -33,7 +33,19 @@
     <color name="__________color">#000000</color>
 
 
+    <!-- google_pixel_4__4xl___2 colors -->
 
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="_____________color">#f9f1f1</color>
+    <color name="boundary_color">#ffffff</color>
+    <color name="______________________________________color">#0c0b0b</color>
+    <color name="____60_color">#3471cc</color>
+    <color name="____284_color">#edf5f9</color>
+    <color name="_________color">#0d0c0c</color>
     <color name="_bg__google_pixel_4__4xl___1_color">#ffffff</color>
     <color name="____8_color">#163085</color>
     <color name="______________color">#f1ebeb</color>
