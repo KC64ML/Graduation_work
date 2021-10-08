@@ -1,632 +1,324 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.thisteampl.jackpot.main.MainActivity">
+    android:layout_height="wrap_content">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+            <View
 
-        <!--        <RelativeLayout-->
-<!--            android:id="@+id/main_field_relativelayout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="150dp"-->
-<!--            android:layout_below="@+id/main_relativelayout"-->
-<!--            android:layout_alignParentStart="true"-->
-<!--            android:layout_marginStart="0dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:background="#ffffff">-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/main_field_textview"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="20dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:text="분야"-->
-<!--                android:textColor="#111111"-->
-<!--                android:textSize="15dp"-->
-<!--                android:textStyle="bold" />-->
-
-
-<!--            <ImageView-->
-<!--                android:id="@+id/main_field2_imageview"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:layout_below="@+id/main_field_textview"-->
-
-<!--                android:layout_marginLeft="70dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_toEndOf="@+id/main_field1_imageview"-->
-<!--                android:scrollbarSize="3dp"-->
-<!--                android:src="@drawable/android_ellipse" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/main_field3_imageview"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:layout_below="@+id/main_field_textview"-->
-
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginRight="70dp"-->
-<!--                android:layout_toStartOf="@+id/main_field4_imageview"-->
-<!--                android:scrollbarSize="3dp"-->
-<!--                android:src="@drawable/android_ellipse" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/main_field4_imageview"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:layout_below="@+id/main_field_textview"-->
-
-<!--                android:layout_alignParentEnd="true"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginRight="30dp"-->
-<!--                android:scrollbarSize="3dp"-->
-<!--                android:src="@drawable/android_ellipse" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/main_field4_imageview2"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:layout_below="@+id/main_field4_imageview"-->
-
-<!--                android:layout_alignParentEnd="true"-->
-<!--                android:layout_marginLeft="70dp"-->
-<!--                android:layout_marginTop="25dp"-->
-<!--                android:layout_marginRight="30dp"-->
-<!--                android:scrollbarSize="3dp"-->
-<!--                android:src="@drawable/android_ellipse" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/main_field4_imageview3"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:layout_below="@+id/main_field1_imageview"-->
-
-<!--                android:layout_marginTop="25dp"-->
-<!--                android:layout_toStartOf="@+id/main_field4_imageview2"-->
-<!--                android:scrollbarSize="3dp"-->
-<!--                android:src="@drawable/android_ellipse" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/main_field4_imageview4"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:layout_below="@+id/main_field4_imageview"-->
-
-<!--                android:layout_marginLeft="70dp"-->
-<!--                android:layout_marginTop="25dp"-->
-<!--                android:layout_toEndOf="@+id/main_field4_imageview5"-->
-<!--                android:scrollbarSize="3dp"-->
-<!--                android:src="@drawable/android_ellipse" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/main_field4_imageview5"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:layout_below="@+id/main_field4_imageview"-->
-
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_marginLeft="30dp"-->
-<!--                android:layout_marginTop="25dp"-->
-<!--                android:scrollbarSize="3dp"-->
-<!--                android:src="@drawable/android_ellipse" />-->
-
-
-<!--        </RelativeLayout>-->
-
-
-<!--        <RelativeLayout-->
-<!--            android:id="@+id/main_attention_relativelayout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="30dp"-->
-<!--            android:layout_below="@+id/main_field_relativelayout"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:background="#ffffff">-->
-
-<!--            <Button-->
-<!--                android:id="@+id/main_projectattention_textview"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_marginLeft="50dp"-->
-<!--                android:layout_marginTop="5dp"-->
-<!--                android:background="#FFFFFF"-->
-<!--                android:text="주목받는 프로젝트"-->
-<!--                android:textColor="#111111"-->
-<!--                android:textSize="15dp" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/main_memberattention_textview"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_alignParentEnd="true"-->
-<!--                android:layout_marginTop="5dp"-->
-<!--                android:layout_marginRight="50dp"-->
-<!--                android:background="#FFFFFF"-->
-<!--                android:text="주목받는 멤버" />-->
-
-<!--        </RelativeLayout>-->
-
-<!--        <FrameLayout-->
-<!--            android:id="@+id/main_projectview_framelayout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="230dp"-->
-<!--            android:layout_above="@+id/main_relativelayout4"-->
-<!--            android:layout_below="@+id/main_attention_relativelayout"-->
-<!--            android:layout_alignParentStart="true"-->
-<!--            android:layout_alignParentLeft="false"-->
-<!--            android:layout_alignParentRight="false"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:background="#ffffff" />-->
-
-<!--        <RelativeLayout-->
-<!--            android:id="@+id/main_relativelayout4"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="180dp"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:background="#ffffff">-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/main_recentlyproject_textview"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="20dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:text="최근에 등록된 프로젝트"-->
-<!--                android:textColor="#000000"-->
-<!--                android:textSize="15dp"-->
-<!--                android:textStyle="bold" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/main_recentlyviewmore_textview"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_alignParentRight="true"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginRight="20dp"-->
-<!--                android:text="더보기 > "-->
-<!--                android:textSize="11dp" />-->
-
-<!--            <FrameLayout-->
-<!--                android:id="@+id/main_recentlyproject_framelayout"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@+id/main_recentlyproject_textview"-->
-<!--                android:layout_centerHorizontal="true" />-->
-<!--        </RelativeLayout>-->
-
-        <!-- 참고 웹 주소 : https://re-build.tistory.com/31 -->
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/main_relativelayout"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:background="#F4F2F2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
+                android:layout_width="412dp"
+                android:layout_height="870dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp" />
 
             <ImageView
-                android:id="@+id/main_title_imageview"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@drawable/title_view_table"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_width="242.48736572266dp"
+                android:layout_height="214.88256835938dp"
+                android:layout_marginStart="89dp"
+                android:layout_marginTop="74.15625dp"
+                android:contentDescription="_____13"
+                android:src="@drawable/disorder1" />
 
             <ImageView
-                android:id="@+id/main_appname_textview"
-                android:layout_width="100dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/jackpot_logo_title"
-                app:layout_constraintStart_toStartOf="@+id/main_title_imageview"
-                app:layout_constraintTop_toTopOf="@+id/main_title_imageview"
-                tools:ignore="MissingConstraints" />
+                android:id="@+id/survey_final"
+                android:layout_width="64dp"
 
-            <ImageView
-                android:id="@+id/main_search_imageview"
-                android:layout_width="30dp"
-                android:layout_height="55dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintEnd_toStartOf="@+id/main_bell_imageview"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/jackpot_search" />
-
-            <ImageView
-                android:id="@+id/main_mypage_imageview"
-                android:layout_width="30dp"
-                android:layout_height="55dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/jackpot_user" />
-
-            <ImageView
-                android:id="@+id/main_bell_imageview"
-                android:layout_width="30dp"
-                android:layout_height="55dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintEnd_toStartOf="@+id/main_mypage_imageview"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/jackpot_bell" />
+                android:layout_height="65dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/kongbu1" />
 
             <TextView
-                android:id="@+id/main_field_textview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:text="분야"
-                android:textColor="#111111"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_title_imageview" />
+                android:layout_width="110dp"
 
+                android:layout_height="61.5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="406dp"
+                android:fontFamily="@font/font12"
+                android:text="사회 성숙도 검사"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
 
             <ImageView
-                android:id="@+id/main_field_imageview1"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:id="@+id/education_final"
+                android:layout_width="63dp"
 
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="50dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toStartOf="@+id/main_field_imageview2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_textview" />
+                android:layout_height="67dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/edu1123" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="129dp"
+                android:layout_marginTop="402dp"
+                android:fontFamily="@font/font12"
+                android:text="교육 사이트"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
 
             <ImageView
-                android:id="@+id/survey_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/main_field_imageview1"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview1"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview1"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview1"
-                app:srcCompat="@drawable/field_self_development" />
+                android:id="@+id/diary_final"
+                android:layout_width="98dp"
+
+                android:layout_height="92dp"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="319dp"
+                android:src="@drawable/diary1" />
 
             <TextView
-                android:id="@+id/main_selfdevelopment_textview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="65dp"
-                android:text="성숙도검사"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toStartOf="@+id/main_hobby_textview"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview1" />
-
-
-            <ImageView
-                android:id="@+id/main_field_imageview2"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="90dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_textview" />
-
-
-            <TextView
-                android:id="@+id/main_hobby_textview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="90dp"
-                android:text="동화 추천"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview2" />
-
-
-            <TextView
-                android:id="@+id/main_hobby_textview2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="90dp"
-                android:text="약 알림"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview3" />
-
-            <TextView
-                android:id="@+id/main_hobby_textview4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="60dp"
+                android:layout_width="60dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="239dp"
+                android:layout_marginTop="395dp"
+                android:fontFamily="@font/font12"
                 android:text="일기장"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toStartOf="@+id/main_hobby_textview5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview5" />
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/game_final"
+                android:layout_width="75dp"
+
+                android:layout_height="56dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/game1" />
 
             <TextView
-                android:id="@+id/main_hobby_textview5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="90dp"
-                android:text="위치확인"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview6" />
+                android:layout_width="80dp"
+                android:layout_height="61.5dp"
+                android:layout_marginLeft="314dp"
+                android:layout_marginTop="393dp"
+                android:fontFamily="@font/font12"
+                android:text="뇌운동 게임"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/location_final"
+                android:layout_width="51dp"
+
+                android:layout_height="58dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="449dp"
+                android:src="@drawable/location1" />
 
             <TextView
-                android:id="@+id/main_hobby_textview6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="90dp"
-                android:text="기억력 게임"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview" />
+                android:layout_width="60dp"
+
+                android:layout_height="48dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="523dp"
+                android:fontFamily="@font/font12"
+                android:text="위치 확인"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/donghwa_final"
+                android:layout_width="64dp"
+
+                android:layout_height="76dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="442dp"
+                android:src="@drawable/donghwa1313" />
 
             <TextView
-                android:id="@+id/main_hobby_textview7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="65dp"
-                android:layout_marginEnd="50dp"
-                android:text="교육사이트"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/main_hobby_textview6"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview7" />
+
+                android:layout_width="70dp"
+                android:layout_height="63.5dp"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="522dp"
+                android:fontFamily="@font/font12"
+                android:text="동화 추천"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/pill_final"
+                android:layout_width="63dp"
+
+                android:layout_height="62dp"
+                android:layout_marginStart="231dp"
+                android:layout_marginTop="448dp"
+                android:src="@drawable/pill123" />
 
             <TextView
-                android:id="@+id/main_hobby_textview3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="65dp"
-                android:layout_marginEnd="50dp"
+                android:layout_width="65dp"
+
+                android:layout_height="65.5dp"
+                android:layout_marginLeft="233dp"
+                android:layout_marginTop="522dp"
+                android:fontFamily="@font/font12"
+
+                android:text="약 알림"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/commu_final"
+                android:layout_width="86dp"
+
+                android:layout_height="83dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="429dp"
+                android:src="@drawable/wifi1" />
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="324dp"
+                android:layout_marginTop="521dp"
+                android:fontFamily="@font/font12"
                 android:text="커뮤니티"
-                android:textColor="#111111"
-                android:textSize="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/main_hobby_textview2"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_imageview4" />
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
 
-            <ImageView
-                android:id="@+id/main_field_imageview3"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+            <!--            <ImageView-->
+            <!--                android:layout_width="412dp"-->
 
-                android:layout_marginStart="90dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_textview" />
+            <!--                android:layout_height="6.3333740234375dp"-->
+            <!--                android:layout_marginStart="0dp"-->
+            <!--                android:layout_marginTop="614dp"-->
+            <!--                android:src="@drawable/nemo2" />-->
 
-            <ImageView
-                android:id="@+id/main_field_imageview"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+            <!--            <TextView-->
 
-                android:layout_marginStart="90dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_hobby_textview2" />
-
-            <ImageView
-                android:id="@+id/main_field_imageview7"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="50dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/main_field_imageview"
-                app:layout_constraintTop_toBottomOf="@+id/main_hobby_textview3" />
-
-            <ImageView
-                android:id="@+id/main_field_imageview4"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="50dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/main_field_imageview3"
-                app:layout_constraintTop_toBottomOf="@+id/main_field_textview" />
-
-            <ImageView
-                android:id="@+id/main_field_imageview5"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="50dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toStartOf="@+id/main_field_imageview6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_selfdevelopment_textview" />
+            <!--                android:layout_width="127dp"-->
+            <!--                android:layout_height="65dp"-->
+            <!--                android:layout_marginLeft="16dp"-->
+            <!--                android:layout_marginTop="666dp"-->
+            <!--                android:fontFamily="@font/font12"-->
+            <!--                android:text="계정 전환"-->
+            <!--                android:textColor="@color/__________color"-->
+            <!--                android:textSize="30sp" />-->
 
 
-            <ImageView
-                android:id="@+id/main_field_imageview6"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="90dp"
-                android:src="@drawable/circle_imageview"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_hobby_textview" />
-
-            <ImageView
-                android:id="@+id/donghwa_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/main_field_imageview2"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview2"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview2"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview2"
-                app:srcCompat="@drawable/field_hobby" />
-
-            <ImageView
-                android:id="@+id/game_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toTopOf="@+id/main_hobby_textview6"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview"
-                app:srcCompat="@drawable/field_health" />
-
-            <ImageView
-                android:id="@+id/community_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/main_field_imageview4"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview4"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview4"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview4"
-                app:srcCompat="@drawable/field_cook" />
-
-            <ImageView
-                android:id="@+id/mynote_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/main_field_imageview5"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview5"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview5"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview5"
-                app:srcCompat="@drawable/field_it" />
-
-            <ImageView
-                android:id="@+id/location_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/main_field_imageview6"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview6"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview6"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview6"
-                app:srcCompat="@drawable/field_art" />
-
-            <ImageView
-                android:id="@+id/pill_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/main_field_imageview3"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview3"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview3"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview3"
-                app:srcCompat="@drawable/field_economy" />
-
-            <ImageView
-                android:id="@+id/education_check"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                app:layout_constraintBottom_toTopOf="@+id/main_hobby_textview7"
-                app:layout_constraintEnd_toEndOf="@+id/main_field_imageview7"
-                app:layout_constraintStart_toStartOf="@+id/main_field_imageview7"
-                app:layout_constraintTop_toTopOf="@+id/main_field_imageview7"
-                app:srcCompat="@drawable/field_repose" />
-
-            <!--        <ImageView-->
-            <!--            android:id="@+id/main_field_imageview7"-->
-            <!--            android:layout_width="55dp"-->
-            <!--            android:layout_height="55dp"-->
-
-            <!--            android:layout_marginStart="100dp"-->
-            <!--            android:layout_marginTop="20dp"-->
-            <!--            android:src="@drawable/circle_imageview" />-->
-
-            <!--        <ImageView-->
-            <!--            android:id="@+id/main_field1_imageview8"-->
-            <!--            android:layout_width="55dp"-->
-            <!--            android:layout_height="55dp"-->
-
-            <!--            android:layout_marginStart="50dp"-->
-            <!--            android:layout_marginTop="20dp"-->
-            <!--            android:layout_marginEnd="50dp"-->
-            <!--            android:src="@drawable/circle_imageview" />-->
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="263.99072265625dp"-->
+            <!--                android:layout_marginTop="726dp">-->
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--                <RelativeLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="0dp"-->
+            <!--                    android:layout_marginTop="10dp">-->
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/appeal_fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/drawproject_fab"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="15dp"
-            android:backgroundTint="#ffffff"
-            android:src="@drawable/android_appeal"
-            android:visibility="invisible"
-            app:borderWidth="0dp"
-            app:fabSize="normal"
-            tools:ignore="MissingConstraints" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/drawproject_fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/main_optionmenu_floatingactionbutton"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="15dp"
-            android:backgroundTint="#ffffff"
-            android:src="@drawable/android_project_create"
-            android:visibility="invisible"
-            app:borderWidth="0dp"
-            app:fabSize="normal"
-            tools:ignore="MissingConstraints" />
+            <!--                    <RelativeLayout-->
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/main_optionmenu_floatingactionbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/cardview_dark_background"
-            android:src="@drawable/android_plus_sign"
-            app:borderWidth="0dp"
-            app:fabSize="normal"
-            app:layout_constraintTop_toBottomOf="@+id/main_relativelayout"
-            tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        android:layout_marginStart="0dp"-->
+            <!--                        android:layout_marginTop="0dp">-->
+
+            <!--                        <ImageView-->
+
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="20dp"-->
+            <!--                            android:layout_marginStart="11dp"-->
+            <!--                            android:layout_marginTop="-3dp"-->
+            <!--                            android:contentDescription="____185"-->
+            <!--                            android:src="@drawable/facebook1" />-->
+
+            <!--                        <View-->
+
+            <!--                            android:layout_width="4dp"-->
+            <!--                            android:layout_height="0dp"-->
+            <!--                            android:layout_marginStart="-10dp"-->
+            <!--                            android:layout_marginTop="-10dp"-->
+            <!--                            android:alpha="0.5" />-->
+
+            <!--                    </RelativeLayout>-->
+
+            <!--                </RelativeLayout>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/facebook123"-->
+            <!--                    android:layout_width="120dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_marginLeft="34dp"-->
+            <!--                    android:fontFamily="@font/font12"-->
+            <!--                    android:text="facebook"-->
+
+            <!--                    android:textSize="21sp" />-->
+
+            <!--            </RelativeLayout>-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="31dp"-->
+
+            <!--                android:layout_height="31dp"-->
+            <!--                android:layout_marginStart="32dp"-->
+            <!--                android:layout_marginTop="731dp"-->
+            <!--                android:src="@drawable/naver1" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/naver"-->
+            <!--                android:layout_width="59dp"-->
+            <!--                android:layout_height="62.5dp"-->
+
+            <!--                android:layout_marginLeft="80dp"-->
+            <!--                android:layout_marginTop="726dp"-->
+            <!--                android:fontFamily="@font/font12"-->
+            <!--                android:text="naver"-->
+            <!--                android:textSize="23sp" />-->
+
+            <!--            <ImageView-->
+
+            <!--                android:layout_width="60dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="18dp"-->
+
+            <!--                android:layout_marginTop="793dp"-->
+
+            <!--                android:src="@drawable/kakao1" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/kakao132"-->
+            <!--                android:layout_width="80dp"-->
+            <!--                android:layout_height="66.5dp"-->
+
+            <!--                android:layout_marginLeft="80dp"-->
+            <!--                android:layout_marginTop="785dp"-->
+            <!--                android:fontFamily="@font/font12"-->
+            <!--                android:text="카카오"-->
+            <!--                android:textSize="20sp" />-->
+
+            <!--            <ImageView-->
+
+            <!--                android:layout_width="55dp"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                android:layout_marginStart="250dp"-->
+            <!--                android:layout_marginTop="790dp"-->
+
+            <!--                android:src="@drawable/google123" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/Google125"-->
+            <!--                android:layout_width="80dp"-->
+            <!--                android:layout_height="86.5dp"-->
+            <!--                android:layout_marginLeft="300dp"-->
+            <!--                android:layout_marginTop="780dp"-->
+            <!--                android:fontFamily="@font/font12"-->
+            <!--                android:text="Google"-->
+
+            <!--                android:textSize="23sp" />-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>
