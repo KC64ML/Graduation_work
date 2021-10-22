@@ -1,0 +1,247 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+
+                android:textSize="25sp"
+                android:textColor="@color/______color"
+                android:layout_marginLeft="151dp"
+                android:layout_marginTop="45dp"
+                android:layout_width="110dp"
+                android:layout_height="65dp"
+                android:text="회원 가입"
+                />
+
+
+            <RelativeLayout
+                android:layout_marginTop="45.99951171875dp"
+                android:layout_marginStart="73.999755859375dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+
+                    android:src="@drawable/pointer2" />
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:src="@drawable/morem1"
+
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="97dp"
+                android:layout_width="404dp"
+                android:layout_height="10dp" />
+
+            <EditText
+
+                android:id="@+id/check_Username"
+                android:layout_width="250dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="171dp"
+                android:hint="아이디"
+                android:textColor="@color/_____color"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/copy"
+                android:layout_width="135dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="261dp"
+                android:layout_marginTop="158dp"
+                android:background="@drawable/shape6" />
+
+            <TextView
+
+
+                android:layout_width="59dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="297dp"
+                android:layout_marginTop="165dp"
+                android:text="중복확인"
+                android:textColor="@color/______ek1_color"
+                android:textSize="15dp" />
+
+            <EditText
+
+
+                android:id="@+id/check_password"
+                android:layout_width="400dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="245dp"
+                android:hint="비밀번호"
+                android:textColor="@color/_____color"
+                android:textSize="20sp" />
+
+            <EditText
+
+
+                android:layout_width="400dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="300dp"
+                android:hint="비밀번호 확인"
+                android:textColor="@color/_____color"
+                android:textSize="20sp" />
+
+            <EditText
+
+                android:id="@+id/check_email"
+                android:layout_width="400dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="350dp"
+                android:hint="이메일"
+                android:textColor="@color/_____color"
+                android:textSize="20sp" />
+
+            <EditText
+
+
+                android:id="@+id/check_Family"
+                android:layout_width="400dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="398dp"
+                android:hint="성별"
+                android:textColor="@color/_____color"
+                android:textSize="20sp" />
+
+            <EditText
+
+                android:id="@+id/check_phone"
+                android:layout_width="400dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="471dp"
+                android:hint="휴대전화번호 ('-') 제외"
+                android:textColor="@color/_____color"
+
+                android:textSize="20sp" />
+
+
+            <EditText
+
+                android:id="@+id/check_birth"
+                android:layout_width="177dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="544dp"
+                android:hint="생년원일 (8자리입력)"
+                android:textColor="@color/_____color"
+
+                android:textSize="18sp" />
+
+            <EditText
+
+                android:id="@+id/check_age"
+                android:layout_width="400dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="600dp"
+                android:hint="나이"
+                android:textColor="@color/_____color"
+
+                android:textSize="18sp" />
+
+            <TextView
+
+
+                android:layout_width="46dp"
+                android:layout_height="133.5dp"
+                android:layout_marginLeft="252dp"
+                android:layout_marginTop="680dp"
+                android:text="여성"
+                android:textColor="@color/_____color"
+                android:textSize="22sp" />
+
+            <RadioButton
+
+
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="680dp" />
+
+            <TextView
+
+                android:layout_marginTop="680dp"
+                android:layout_width="46dp"
+                android:layout_height="133.5dp"
+                android:layout_marginLeft="330dp"
+                android:text="남성"
+                android:textColor="@color/_____color"
+                android:textSize="22sp" />
+
+            <RadioButton
+
+
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="680dp" />
+
+            <RelativeLayout
+                android:layout_marginTop="642.5dp"
+                android:layout_marginStart="23.437255859375dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <RelativeLayout
+                android:layout_marginTop="687dp"
+                android:layout_marginStart="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/input_signup"
+                android:layout_marginTop="767dp"
+                android:layout_marginStart="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+                    android:id="@+id/join131"
+                    android:layout_width="410dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shape7" />
+
+                <TextView
+
+                    android:layout_width="102dp"
+                    android:layout_height="86.5dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="15dp"
+                    android:text="회원 가입"
+                    android:textColor="@color/_______ek1_color"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>

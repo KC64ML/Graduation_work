@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="FloralWhite">#fffaf0</color>
+    <color name="Azure">#f0ffff	</color>
+    <color name="Cornsilk">#fff8dc</color>
+    <color name="_bg__google_pixel_4__4xl___3_color">#ffffff</color>
+    <color name="_____color">#191919</color>
+    <color name="_____________________color">#999999</color>
+    <color name="_____3_color">#6524ff</color>
+    <color name="_________________color">#f1f1f5</color>
+
+    <color name="_____ek1_color">#000000</color>
+    <color name="____________________color">#070707</color>
+
+    <color name="_bg__google_pixel_4__4xl___2_color">#ffffff</color>
+    <color name="______color">#000000</color>
+
+    <color name="_____2600_color">#191919</color>
+    <color name="______ek1_color">#f8f8fa</color>
+    <color name="_____2601_color">#000000</color>
+    <color name="_______ek1_color">#ffffff</color>
+
+
+    <color name="_bg__google_pixel_4__4xl___4_color">#ffffff</color>
+    <color name="__________color">#000000</color>
+
+
+    <!-- google_pixel_4__4xl___2 colors -->
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="_____________color">#f9f1f1</color>
+    <color name="boundary_color">#ffffff</color>
+    <color name="______________________________________color">#0c0b0b</color>
+    <color name="____60_color">#3471cc</color>
+    <color name="____284_color">#edf5f9</color>
+    <color name="_________color">#0d0c0c</color>
+    <color name="_bg__google_pixel_4__4xl___1_color">#ffffff</color>
+    <color name="____8_color">#163085</color>
+    <color name="______________color">#f1ebeb</color>
+    <color name="___________color">#f1f1f5</color>
+
+    <color name="mis">#FFE4E1</color>
+    <color name="mola">#B16767</color>
+    <color name="Irony">#FFFFFFF0</color>
+
+</resources>

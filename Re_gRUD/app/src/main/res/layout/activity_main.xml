@@ -1,0 +1,324 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+
+                android:layout_width="412dp"
+                android:layout_height="870dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp" />
+
+            <ImageView
+                android:layout_width="242.48736572266dp"
+                android:layout_height="214.88256835938dp"
+                android:layout_marginStart="89dp"
+                android:layout_marginTop="74.15625dp"
+                android:contentDescription="_____13"
+                android:src="@drawable/disorder1" />
+
+            <ImageView
+                android:id="@+id/survey_final"
+                android:layout_width="64dp"
+
+                android:layout_height="65dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/kongbu1" />
+
+            <TextView
+                android:layout_width="110dp"
+
+                android:layout_height="61.5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="406dp"
+                android:fontFamily="@font/font12"
+                android:text="사회 성숙도 검사"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/education_final"
+                android:layout_width="63dp"
+
+                android:layout_height="67dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/edu1123" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="129dp"
+                android:layout_marginTop="402dp"
+                android:fontFamily="@font/font12"
+                android:text="교육 사이트"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/diary_final"
+                android:layout_width="98dp"
+
+                android:layout_height="92dp"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="319dp"
+                android:src="@drawable/diary1" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="239dp"
+                android:layout_marginTop="395dp"
+                android:fontFamily="@font/font12"
+                android:text="일기장"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/game_final"
+                android:layout_width="75dp"
+
+                android:layout_height="56dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/game1" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="61.5dp"
+                android:layout_marginLeft="314dp"
+                android:layout_marginTop="393dp"
+                android:fontFamily="@font/font12"
+                android:text="뇌운동 게임"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/location_final"
+                android:layout_width="51dp"
+
+                android:layout_height="58dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="449dp"
+                android:src="@drawable/location1" />
+
+            <TextView
+                android:layout_width="60dp"
+
+                android:layout_height="48dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="523dp"
+                android:fontFamily="@font/font12"
+                android:text="위치 확인"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/donghwa_final"
+                android:layout_width="64dp"
+
+                android:layout_height="76dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="442dp"
+                android:src="@drawable/donghwa1313" />
+
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="63.5dp"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="522dp"
+                android:fontFamily="@font/font12"
+                android:text="동화 추천"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/pill_final"
+                android:layout_width="63dp"
+
+                android:layout_height="62dp"
+                android:layout_marginStart="231dp"
+                android:layout_marginTop="448dp"
+                android:src="@drawable/pill123" />
+
+            <TextView
+                android:layout_width="65dp"
+
+                android:layout_height="65.5dp"
+                android:layout_marginLeft="233dp"
+                android:layout_marginTop="522dp"
+                android:fontFamily="@font/font12"
+
+                android:text="약 알림"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/wifi123"
+                android:layout_width="86dp"
+
+                android:layout_height="83dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="429dp"
+                android:src="@drawable/wifi1" />
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="324dp"
+                android:layout_marginTop="521dp"
+                android:fontFamily="@font/font12"
+                android:text="커뮤니티"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="412dp"
+
+                            android:layout_height="6.3333740234375dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="614dp"
+                            android:src="@drawable/nemo2" />
+
+                        <TextView
+
+                            android:layout_width="127dp"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="666dp"
+                            android:fontFamily="@font/font12"
+                            android:text="계정 전환"
+                            android:textColor="@color/__________color"
+                            android:textSize="30sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="263.99072265625dp"
+                            android:layout_marginTop="726dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp">
+
+
+                                <RelativeLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp">
+
+                                    <ImageView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:layout_marginStart="11dp"
+                                        android:layout_marginTop="-3dp"
+                                        android:contentDescription="____185"
+                                        android:src="@drawable/facebook1" />
+
+                                    <View
+
+                                        android:layout_width="4dp"
+                                        android:layout_height="0dp"
+                                        android:layout_marginStart="-10dp"
+                                        android:layout_marginTop="-10dp"
+                                        android:alpha="0.5" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/facebook123"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="34dp"
+                                android:fontFamily="@font/font12"
+                                android:text="facebook"
+
+                                android:textSize="21sp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="31dp"
+
+                            android:layout_height="31dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="731dp"
+                            android:src="@drawable/naver1" />
+
+                        <TextView
+                            android:id="@+id/naver"
+                            android:layout_width="59dp"
+                            android:layout_height="62.5dp"
+
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="726dp"
+                            android:fontFamily="@font/font12"
+                            android:text="naver"
+                            android:textSize="23sp" />
+
+                        <ImageView
+
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="18dp"
+
+                            android:layout_marginTop="793dp"
+
+                            android:src="@drawable/kakao1" />
+
+                        <TextView
+                            android:id="@+id/kakao132"
+                            android:layout_width="80dp"
+                            android:layout_height="66.5dp"
+
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="785dp"
+                            android:fontFamily="@font/font12"
+                            android:text="카카오"
+                            android:textSize="20sp" />
+
+                        <ImageView
+
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="250dp"
+                            android:layout_marginTop="790dp"
+
+                            android:src="@drawable/google123" />
+
+                        <TextView
+                            android:id="@+id/Google125"
+                            android:layout_width="80dp"
+                            android:layout_height="86.5dp"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="780dp"
+                            android:fontFamily="@font/font12"
+                            android:text="Google"
+
+                            android:textSize="23sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>

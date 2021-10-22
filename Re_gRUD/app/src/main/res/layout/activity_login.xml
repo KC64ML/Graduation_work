@@ -1,0 +1,329 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="411.99996948242dp"
+
+
+                android:layout_height="104dp"
+                android:layout_marginTop="274dp"
+                android:src="@drawable/nemonemo1" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <ImageView
+                    android:layout_width="412dp"
+                    android:layout_height="274.59802246094dp"
+
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="_1622122765310_ek1"
+                    android:src="@drawable/backg123" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="81dp">
+
+                <View
+                    android:id="@+id/join2"
+                    android:layout_width="414dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/white12" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="23.800018310547dp"
+
+                        android:layout_height="15.86669921875dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/pointers1" />
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/morem1231" />
+
+                </RelativeLayout>
+
+                <TextView
+
+                    android:layout_width="142dp"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="13dp"
+                    android:text="로그 인"
+                    android:textColor="@color/_____color"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-39dp"
+                android:layout_marginLeft="-39dp"
+                android:layout_marginTop="302dp">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+
+                    android:src="@drawable/nemonemo2" />
+
+                <EditText
+
+                    android:id="@+id/text1"
+                    android:layout_width="251dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="61dp"
+                    android:hint="아이디를 입력하세요"
+                    android:textColor="@color/_____________________color"
+                    android:textSize="17sp" />
+
+                <EditText
+
+                    android:id="@+id/Textps"
+                    android:layout_width="251dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="70dp"
+                    android:hint="비밀번호를 입력하세요."
+                    android:textColor="@color/_____________________color"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-71dp"
+                android:layout_marginLeft="-71dp"
+                android:layout_marginTop="369dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="492dp">
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="489dp">
+
+                <View
+                    android:id="@+id/login"
+                    android:layout_width="412dp"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/pupl123" />
+
+                <View
+
+                    android:layout_width="412dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="40dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/puple124" />
+
+                <TextView
+
+                    android:layout_width="144dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginTop="10dp"
+                    android:text="로그인"
+                    android:textColor="@color/_________________color"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="35dp"
+
+                android:layout_height="34dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="588dp"
+                android:src="@drawable/naver32" />
+
+
+            <TextView
+                android:id="@+id/naver"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginLeft="82dp"
+                android:layout_marginTop="590dp"
+                android:fontFamily="@font/font12"
+                android:text="naver"
+                android:textColor="@color/_____color"
+                android:textSize="26sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="238dp"
+                android:layout_marginLeft="238dp"
+                android:layout_marginTop="585.5dp">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="9dp">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginLeft="9dp"
+                            android:contentDescription="____185"
+                            android:src="@drawable/face" />
+
+                        <View
+
+                            android:layout_width="8dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-15dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/face" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/font12"
+                    android:text="facebook"
+                    android:textColor="@color/_____color"
+                    android:textSize="23sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="46dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="657dp"
+                android:contentDescription="_____1"
+                android:src="@drawable/kakao1232" />
+
+            <TextView
+                android:id="@+id/kakao"
+                android:layout_width="118dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="649dp"
+                android:fontFamily="@font/font12"
+                android:text="카카오"
+                android:textColor="@color/_____ek1_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+
+                android:layout_height="25dp"
+                android:layout_marginStart="246dp"
+                android:layout_marginLeft="246dp"
+                android:layout_marginTop="651dp"
+                android:src="@drawable/google3215" />
+
+            <TextView
+                android:id="@+id/Google"
+                android:layout_width="123dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="285dp"
+                android:layout_marginTop="644dp"
+                android:fontFamily="@font/font12"
+                android:text="Google"
+                android:textColor="@color/_____color"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/join3"
+                android:layout_width="300dp"
+                android:layout_height="317.5dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="696dp"
+                android:fontFamily="@font/font12"
+                android:text="회원 가입"
+                android:textColor="@color/____________________color"
+                android:textSize="35sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>
