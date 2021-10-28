@@ -1,87 +1,139 @@
+
 package com.example.re_grud
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Toast
-import com.example.re_grud.Donghwa.Donghwa
-import com.example.re_grud.Login.Login
-import com.example.re_grud.Retro.RetroClient.Companion.prefs
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
+import com.example.re_grud.MapActivity.Companion.SEARCH_RESULT_EXTRA_KEY
 
 
-class MainActivity : AppCompatActivity() {
+import com.example.re_grud.model.poi.schema.entity.SearchResultEntity
+
+import com.example.re_grud.databinding.ActivityMainBinding
+
+import com.example.re_grud.model.poi.schema.entity.LocationLatLngEntity
+
+
+import com.example.re_grud.model.poi.schema.response.search.Poi
+import com.example.re_grud.model.poi.schema.response.search.Pois
+
+
+import com.example.re_grud.utillity.RetrofitUtil
+import kotlinx.android.synthetic.main.activity_location2.*
+
+import kotlinx.coroutines.*
+import java.lang.Exception
+import kotlin.coroutines.CoroutineContext
+
+class MainActivity : AppCompatActivity(), CoroutineScope {
+
+    private lateinit var job: Job
+
+    override val coroutineContext: CoroutineContext
+        get() = Dispatchers.Main + job
+
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var adapter: SearchRecyclerAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val main_dongahwa = findViewById<View>(R.id.donghwa_final);
-        val main_location = findViewById<View>(R.id.location_final);
-        val main_pill = findViewById<View>(R.id.pill_final);
-        val main_diary = findViewById<View>(R.id.diary_final);
-        val main_survey = findViewById<View>(R.id.survey_final);
-        val main_game = findViewById<View>(R.id.game_final);
+        job = Job()
 
-        val main_education = findViewById<View>(R.id.education_final);
+        initAdapter()
+        initViews()
+        bindViews()
+        initData()
+    }
 
-        val main_go_donga = Intent(this, Donghwa::class.java)
-        main_game.setOnClickListener{
-            val intent = Intent(this, Donghwa::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
+    private fun initAdapter() {
+        adapter = SearchRecyclerAdapter()
+    }
 
-            startActivity(intent);
+    private fun initViews() = with(binding) {
+        emptyResultTextView.isVisible = false
+        recyclerView.adapter = adapter
+    }
 
+    private fun bindViews() = with(binding) {
+        searchButton.setOnClickListener {
+            searchKeyword(searchBarInputView.text.toString())
         }
-        Log.d("tag","main_donghwa 클릭하기전")
-        main_dongahwa.setOnClickListener {
-            Log.d("tag","main_dongahwa 클릭")
-            if (prefs.getString("token", "NO_TOKEN") == "NO_TOKEN") {
-                Toast.makeText(
-                    this, "로그인 정보가 없습니다." +
-                            "\n로그인 화면으로 이동합니다.", Toast.LENGTH_SHORT
-                ).show()
-                Log.d("tag","Main : setOnClick 동아")
-                val intent = Intent(this, Login::class.java)
-                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
-            } else {
-                startActivity(main_go_donga.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+    }
+
+    private fun initData() {
+        adapter.notifyDataSetChanged()
+    }
+
+    private fun setData(pois: Pois) {
+        val dataList = pois.poi.map {
+            SearchResultEntity(
+                fullAdress = makeMainAdress(it),
+                name = it.name ?: "",
+                locationLatLng = LocationLatLngEntity(it.noorLat, it.noorLon)
+            )
+        }
+        adapter.setSearchResultList(dataList) {
+            startActivity(
+                Intent(this, MapActivity::class.java).apply {
+                    putExtra(SEARCH_RESULT_EXTRA_KEY, it)
+                }
+            )
+        }
+    }
+
+    private fun searchKeyword(keywordString: String) {
+        launch(coroutineContext) {
+            try {
+                withContext(Dispatchers.IO) {
+                    val response = RetrofitUtil.apiService.getSearchLocation(
+                        keyword = keywordString
+                    )
+                    if (response.isSuccessful) {
+                        val body = response.body()
+                        withContext(Dispatchers.Main) {
+                            Log.e("list", body.toString())
+                            body?.let { searchResponseSchema ->
+                                setData(searchResponseSchema.searchPoiInfo.pois)
+                            }
+                        }
+                    }
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+                Toast.makeText(this@MainActivity, "검색하는 과정에서 에러가 발생했습니다. : ${e.message}", Toast.LENGTH_SHORT).show()
             }
         }
+    }
 
-
-/*
-        main_location.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
-
-            startActivity(intent);
-
+    private fun makeMainAdress(poi: Poi): String =
+        if (poi.secondNo?.trim().isNullOrEmpty()) {
+            (poi.upperAddrName?.trim() ?: "") + " " +
+                    (poi.middleAddrName?.trim() ?: "") + " " +
+                    (poi.lowerAddrName?.trim() ?: "") + " " +
+                    (poi.detailAddrName?.trim() ?: "") + " " +
+                    poi.firstNo?.trim()
+        } else {
+            (poi.upperAddrName?.trim() ?: "") + " " +
+                    (poi.middleAddrName?.trim() ?: "") + " " +
+                    (poi.lowerAddrName?.trim() ?: "") + " " +
+                    (poi.detailAddrName?.trim() ?: "") + " " +
+                    (poi.firstNo?.trim() ?: "") + " " +
+                    poi.secondNo?.trim()
         }
 
-
-        main_pill.setOnClickListener{
-            val intent = Intent(this,MainActivity2::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
-
-            startActivity(intent);
-
-        }
-
-        main_education.setOnClickListener{
-            val intent = Intent(this,MainActivity4::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
-
-            startActivity(intent);
-
-        }*/
-
-       /* main_diary.setOnClickListener {
-            val intent = Intent(this,pass::class.java)
-            startActivity(intent)
-        }
-
-        main_survey.setOnClickListener {
-            val intent = Intent(this,survey::class.java)
-            startActivity(intent)
-        }*/
-
-
+    override fun onDestroy() {
+        super.onDestroy()
+        job.cancel()
     }
 }
+
+
+
+
+

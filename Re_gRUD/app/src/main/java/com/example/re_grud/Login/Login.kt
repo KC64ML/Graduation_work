@@ -7,14 +7,11 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
-import com.example.re_grud.MainActivity
+import com.example.re_grud.MainActivity_2
 import com.example.re_grud.R
-import com.example.re_grud.Retro.RetroClient.Companion.retrofit
-import com.example.re_grud.Retro.Server
 import com.example.re_grud.Signup.Signup
 import retrofit2.Call
 import retrofit2.Response
-import javax.security.auth.callback.Callback
 
 class Login : AppCompatActivity() {
     private val Server = com.example.re_grud.Retro.Server.create()
@@ -57,7 +54,7 @@ class Login : AppCompatActivity() {
 
             })
 
-            val intent = Intent(this, MainActivity::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
+            val intent = Intent(this, MainActivity_2::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
             startActivity(intent);
 
         }
