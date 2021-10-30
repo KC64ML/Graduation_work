@@ -22,10 +22,10 @@
                 android:textSize="30sp"
                 android:textColor="@color/_____________color"
                 android:layout_marginLeft="122dp"
-                android:layout_marginTop="27dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="181dp"
                 android:layout_height="52dp"
-                android:text="지적 장애 척도 검사"
+                android:text="지적 장애 척도검사"
                 />
 
 
@@ -35,15 +35,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 >
+                <TextView
+                    android:id="@+id/textresult"
 
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="450dp"
+                    />
 
 
                 <ImageView
                     android:id="@+id/back2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_marginStart="27dp"
-                    android:layout_marginTop="19dp"
+                    android:layout_marginTop="21dp"
 
                     android:src="@drawable/arrow1" />
 
@@ -79,14 +86,14 @@
 
             <TextView
 
-                android:layout_width="25dp"
+                android:layout_width="29dp"
                 android:layout_height="51dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="115dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="112dp"
                 android:fontFamily="@font/happytfruit"
                 android:text="05"
                 android:textColor="@color/_____________color"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -190,7 +197,7 @@
                 android:textSize="30sp"
                 android:textColor="@color/_____________color"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="272dp"
+                android:layout_marginTop="269dp"
                 android:layout_width="29dp"
                 android:layout_height="51dp"
                 android:text="06"
@@ -284,8 +291,8 @@
                 android:fontFamily="@font/happytfruit"
                 android:textSize="30sp"
                 android:textColor="@color/_____________color"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="429dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="427dp"
                 android:layout_width="29dp"
                 android:layout_height="51dp"
                 android:text="07"
@@ -380,8 +387,8 @@
                 android:fontFamily="@font/happytfruit"
                 android:textSize="30sp"
                 android:textColor="@color/_____________color"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="584dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="581dp"
                 android:layout_width="29dp"
                 android:layout_height="51dp"
                 android:text="08"

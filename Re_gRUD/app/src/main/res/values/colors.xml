@@ -34,7 +34,7 @@
 
 
     <!-- google_pixel_4__4xl___2 colors -->
-
+    <color name="background_black">#222222</color>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>

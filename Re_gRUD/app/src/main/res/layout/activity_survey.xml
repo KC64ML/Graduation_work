@@ -22,10 +22,10 @@
                 android:textSize="30sp"
                 android:textColor="@color/_____________color"
                 android:layout_marginLeft="122dp"
-                android:layout_marginTop="27dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="181dp"
                 android:layout_height="52dp"
-                android:text="지적 장애 척도 검사"
+                android:text="지적 장애 척도검사"
                 />
 
 
@@ -38,7 +38,7 @@
 
 
                 <ImageView
-                    android:id="@+id/back"
+                    android:id="@+id/back_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="27dp"
@@ -80,7 +80,7 @@
 
                 android:layout_width="25dp"
                 android:layout_height="51dp"
-                android:layout_marginLeft="17dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="115dp"
                 android:fontFamily="@font/happytfruit"
                 android:text="01"
@@ -275,7 +275,7 @@
                 android:textSize="30sp"
                 android:textColor="@color/_____________color"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="272dp"
+                android:layout_marginTop="270dp"
                 android:layout_width="29dp"
                 android:layout_height="51dp"
                 android:text="02"
@@ -292,8 +292,8 @@
 
                 android:layout_width="29dp"
                 android:layout_height="51dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="429dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="427dp"
                 android:fontFamily="@font/happytfruit"
                 android:text="03"
                 android:textColor="@color/_____________color"
@@ -411,8 +411,8 @@
                 android:fontFamily="@font/happytfruit"
                 android:textSize="30sp"
                 android:textColor="@color/_____________color"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="584dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="582dp"
                 android:layout_width="29dp"
                 android:layout_height="51dp"
                 android:text="04"
@@ -538,4 +538,5 @@
         </RelativeLayout>
 
     </ScrollView>
+
 </HorizontalScrollView>

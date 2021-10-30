@@ -8,11 +8,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.example.re_grud.MapActivity.Companion.SEARCH_RESULT_EXTRA_KEY
+import com.example.re_grud.databinding.ActivityLocation2Binding
+import com.example.re_grud.databinding.ActivityMainBinding
 
 
 import com.example.re_grud.model.poi.schema.entity.SearchResultEntity
-
-import com.example.re_grud.databinding.ActivityMainBinding
 
 import com.example.re_grud.model.poi.schema.entity.LocationLatLngEntity
 

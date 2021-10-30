@@ -19,20 +19,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageButton
+        <TextView
             android:id="@+id/imageButton32"
-            android:layout_width="177dp"
+            android:layout_width="500dp"
             android:layout_height="76dp"
+            android:fontFamily="@font/happytfruit"
             android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="http://www.kappd.or.kr/kappd/"
             app:srcCompat="@drawable/support" />
 
 
-        <ImageButton
-            android:id="@+id/imageButton31"
-            android:layout_width="209dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/jaehwal" />
     </LinearLayout>
 
     <LinearLayout

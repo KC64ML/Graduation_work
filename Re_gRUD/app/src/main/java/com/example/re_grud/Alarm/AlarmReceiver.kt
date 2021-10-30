@@ -11,6 +11,7 @@ import com.example.re_grud.R
 
 class AlarmReceiver: BroadcastReceiver() {
 
+
     companion object {
         const val NOTIFICATION_ID = 100
         const val NOTIFICATION_CHANNEL_ID = "1000"
@@ -39,7 +40,7 @@ class AlarmReceiver: BroadcastReceiver() {
         with(NotificationManagerCompat.from(context)) {
             val build = NotificationCompat.Builder(context, NOTIFICATION_CHANNEL_ID)
                 .setContentTitle("알람")
-                .setContentText("타이레놀 드실 시간입니다.")
+                .setContentText("약 드실 시간입니다.")
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
 
@@ -47,6 +48,6 @@ class AlarmReceiver: BroadcastReceiver() {
 
         }
 
-    }// 변경확인
+    }
 
 }

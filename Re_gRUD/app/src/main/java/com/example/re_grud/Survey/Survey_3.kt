@@ -1,12 +1,16 @@
 package com.example.re_grud.Survey
 
+import android.content.Intent
 import android.os.Bundle
 import android.telephony.RadioAccessSpecifier
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.re_grud.MainActivity_2
 import com.example.re_grud.R
+import kotlinx.android.synthetic.main.activity_survey3.*
 
 import org.jetbrains.anko.find
 
@@ -15,12 +19,11 @@ class Survey_3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_survey3)
         var count = 0;
-
+        var textresult : TextView
         var rg9 : RadioGroup
         var rg10 : RadioGroup
 
-
-
+       textresult = findViewById<TextView>(R.id.result)
         rg9 = findViewById<RadioGroup>(R.id.rg9)
         rg10 = findViewById<RadioGroup>(R.id.rg10)
 
@@ -47,6 +50,13 @@ class Survey_3 : AppCompatActivity() {
 
 
             }
+           finish1.setOnClickListener {
+               intent = Intent(this,MainActivity_2::class.java)
+
+               startActivity(intent)
+           }
+
+          //  textresult.text = " 점수는? " + count.toString()
 
 
 

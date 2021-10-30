@@ -284,11 +284,6 @@
             android:textSize="20dp"
             android:fontFamily="@font/happytfruit"
             android:text="7:02 솔로몬이야기 감동적"/>
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/hello" />
 
 
 

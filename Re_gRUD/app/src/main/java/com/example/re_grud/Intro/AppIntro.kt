@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.example.re_grud.AppVedio
+import com.example.re_grud.Login.Login
 import com.example.re_grud.MainActivity_2
 import com.example.re_grud.R
 
@@ -13,7 +15,7 @@ class AppIntro : AppCompatActivity() {
         setContentView(R.layout.activity_intro)
         var handler = Handler()
         handler.postDelayed( {
-            var intent = Intent( this, MainActivity_2::class.java)
+            var intent = Intent( this, AppVedio::class.java)
             startActivity(intent)
         }, 1400) }
     override fun onPause() {

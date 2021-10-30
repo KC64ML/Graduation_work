@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+
 import com.example.re_grud.Alarm.ALARM
 import com.example.re_grud.Calender.Pass
 import com.example.re_grud.Donghwa.Donghwa
@@ -19,7 +20,7 @@ import com.example.re_grud.Survey.Survey
 class MainActivity_2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_mainpage)
 
         val main_dongahwa = findViewById<View>(R.id.donghwa_final);
         val main_location = findViewById<View>(R.id.location_final);
@@ -30,13 +31,14 @@ class MainActivity_2 : AppCompatActivity() {
 
         val main_education = findViewById<View>(R.id.education_final);
 
-        val main_go_donga = Intent(this, Donghwa::class.java)
-        main_game.setOnClickListener{
+       // val main_go_donga = Intent(this, Donghwa::class.java)
+        main_dongahwa.setOnClickListener{
             val intent = Intent(this, Donghwa::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
 
             startActivity(intent);
 
         }
+        /*
         Log.d("tag","main_donghwa 클릭하기전")
         main_dongahwa.setOnClickListener {
             Log.d("tag","main_dongahwa 클릭")
@@ -52,11 +54,11 @@ class MainActivity_2 : AppCompatActivity() {
                 startActivity(main_go_donga.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
             }
         }
-
+*/
 
 
         main_location.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
+            val intent = Intent(this,MainActivity::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
 
             startActivity(intent);
 

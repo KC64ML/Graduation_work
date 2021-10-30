@@ -65,30 +65,20 @@
                         android:layout_height="15.86669921875dp"
                         android:layout_marginStart="4dp"
                         android:layout_marginLeft="4dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="10dp"
                         android:src="@drawable/pointers1" />
-
-                    <ImageView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginLeft="0dp"
-
-                        android:layout_marginTop="0dp"
-                        android:src="@drawable/morem1231" />
 
                 </RelativeLayout>
 
                 <TextView
-
-                    android:layout_width="142dp"
+                    android:fontFamily="@font/happytfruit"
+                    android:layout_width="110dp"
                     android:layout_height="41dp"
-                    android:layout_marginLeft="61dp"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginTop="16dp"
                     android:text="로그 인"
                     android:textColor="@color/_____color"
-                    android:textSize="22sp" />
+                    android:textSize="28sp" />
 
             </RelativeLayout>
 
@@ -115,6 +105,7 @@
                     android:id="@+id/text1"
                     android:layout_width="251dp"
                     android:layout_height="45dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginLeft="61dp"
                     android:hint="아이디를 입력하세요"
                     android:textColor="@color/_____________________color"
@@ -126,7 +117,7 @@
                     android:layout_width="251dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="61dp"
-                    android:layout_marginTop="70dp"
+                    android:layout_marginTop="80dp"
                     android:hint="비밀번호를 입력하세요."
                     android:textColor="@color/_____________________color"
                     android:textSize="17sp" />
@@ -179,12 +170,12 @@
                     android:background="@drawable/puple124" />
 
                 <TextView
-
                     android:layout_width="144dp"
                     android:layout_height="65dp"
                     android:layout_marginLeft="165dp"
-                    android:layout_marginTop="10dp"
-                    android:text="로그인"
+                    android:layout_marginTop="12dp"
+
+                    android:text="로그 인"
                     android:textColor="@color/_________________color"
                     android:textSize="25sp" />
 
@@ -204,12 +195,12 @@
                 android:id="@+id/naver"
                 android:layout_width="wrap_content"
                 android:layout_height="62dp"
-                android:layout_marginLeft="82dp"
+                android:layout_marginLeft="90dp"
                 android:layout_marginTop="590dp"
-                android:fontFamily="@font/font12"
+                android:fontFamily="@font/happytfruit"
                 android:text="naver"
                 android:textColor="@color/_____color"
-                android:textSize="26sp" />
+                android:textSize="23sp" />
 
 
             <RelativeLayout
@@ -264,7 +255,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="62dp"
                     android:layout_marginLeft="30dp"
-                    android:fontFamily="@font/font12"
+                    android:fontFamily="@font/happytfruit"
                     android:text="facebook"
                     android:textColor="@color/_____color"
                     android:textSize="23sp" />
@@ -284,12 +275,12 @@
                 android:id="@+id/kakao"
                 android:layout_width="118dp"
                 android:layout_height="73dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="649dp"
-                android:fontFamily="@font/font12"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="650dp"
+                android:fontFamily="@font/happytfruit"
                 android:text="카카오"
                 android:textColor="@color/_____ek1_color"
-                android:textSize="20sp" />
+                android:textSize="23sp" />
 
             <ImageView
                 android:layout_width="24dp"
@@ -306,7 +297,7 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="285dp"
                 android:layout_marginTop="644dp"
-                android:fontFamily="@font/font12"
+                android:fontFamily="@font/happytfruit"
                 android:text="Google"
                 android:textColor="@color/_____color"
                 android:textSize="23sp" />
@@ -315,9 +306,9 @@
                 android:id="@+id/join3"
                 android:layout_width="300dp"
                 android:layout_height="317.5dp"
-                android:layout_marginLeft="135dp"
+                android:layout_marginLeft="150dp"
                 android:layout_marginTop="696dp"
-                android:fontFamily="@font/font12"
+                android:fontFamily="@font/happytfruit"
                 android:text="회원 가입"
                 android:textColor="@color/____________________color"
                 android:textSize="35sp" />

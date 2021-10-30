@@ -1,198 +1,50 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    tools:context="com.example.re_grud.MainActivity">
 
-    <ScrollView
+    <EditText
+        android:id="@+id/searchBarInputView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/searchButton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/please_input_search_keyword"/>
+
+    <Button
+        android:id="@+id/searchButton"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/searchBarInputView"
+        android:textColor="@color/white"
+        android:text="@string/search"/>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/searchBarInputView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
-            <View
+    <TextView
+        android:id="@+id/emptyResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_result"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"/>
 
-                android:layout_width="412dp"
-                android:layout_height="870dp"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp" />
-
-            <ImageView
-                android:layout_width="242.48736572266dp"
-                android:layout_height="214.88256835938dp"
-                android:layout_marginStart="89dp"
-                android:layout_marginTop="74.15625dp"
-                android:contentDescription="_____13"
-                android:src="@drawable/disorder1" />
-
-            <ImageView
-                android:id="@+id/survey_final"
-                android:layout_width="64dp"
-
-                android:layout_height="65dp"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="333dp"
-                android:src="@drawable/kongbu1" />
-
-            <TextView
-                android:layout_width="110dp"
-
-                android:layout_height="61.5dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="406dp"
-                android:fontFamily="@font/font12"
-                android:text="사회 성숙도 검사"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/education_final"
-                android:layout_width="63dp"
-
-                android:layout_height="67dp"
-                android:layout_marginStart="132dp"
-                android:layout_marginTop="333dp"
-                android:src="@drawable/edu1123" />
-
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="31.5dp"
-                android:layout_marginLeft="129dp"
-                android:layout_marginTop="402dp"
-                android:fontFamily="@font/font12"
-                android:text="교육 사이트"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/diary_final"
-                android:layout_width="98dp"
-
-                android:layout_height="92dp"
-                android:layout_marginStart="207dp"
-                android:layout_marginTop="319dp"
-                android:src="@drawable/diary1" />
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="31.5dp"
-                android:layout_marginLeft="239dp"
-                android:layout_marginTop="395dp"
-                android:fontFamily="@font/font12"
-                android:text="일기장"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/game_final"
-                android:layout_width="75dp"
-
-                android:layout_height="56dp"
-                android:layout_marginStart="315dp"
-                android:layout_marginTop="333dp"
-                android:src="@drawable/game1" />
-
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="61.5dp"
-                android:layout_marginLeft="314dp"
-                android:layout_marginTop="393dp"
-                android:fontFamily="@font/font12"
-                android:text="뇌운동 게임"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/location_final"
-                android:layout_width="51dp"
-
-                android:layout_height="58dp"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="449dp"
-                android:src="@drawable/location1" />
-
-            <TextView
-                android:layout_width="60dp"
-
-                android:layout_height="48dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="523dp"
-                android:fontFamily="@font/font12"
-                android:text="위치 확인"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/donghwa_final"
-                android:layout_width="64dp"
-
-                android:layout_height="76dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="442dp"
-                android:src="@drawable/donghwa1313" />
-
-            <TextView
-
-                android:layout_width="70dp"
-                android:layout_height="63.5dp"
-                android:layout_marginLeft="132dp"
-                android:layout_marginTop="522dp"
-                android:fontFamily="@font/font12"
-                android:text="동화 추천"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/pill_final"
-                android:layout_width="63dp"
-
-                android:layout_height="62dp"
-                android:layout_marginStart="231dp"
-                android:layout_marginTop="448dp"
-                android:src="@drawable/pill123" />
-
-            <TextView
-                android:layout_width="65dp"
-
-                android:layout_height="65.5dp"
-                android:layout_marginLeft="233dp"
-                android:layout_marginTop="522dp"
-                android:fontFamily="@font/font12"
-
-                android:text="약 알림"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/wifi123"
-                android:layout_width="86dp"
-
-                android:layout_height="83dp"
-                android:layout_marginStart="315dp"
-                android:layout_marginTop="429dp"
-                android:src="@drawable/wifi1" />
-
-            <TextView
-
-                android:layout_width="60dp"
-                android:layout_height="31.5dp"
-                android:layout_marginLeft="324dp"
-                android:layout_marginTop="521dp"
-                android:fontFamily="@font/font12"
-                android:text="커뮤니티"
-                android:textColor="@color/__________color"
-                android:textSize="15sp" />
-
-                        <ImageView
-                            android:layout_width="412dp"
-
-                            android:layout_height="6.3333740234375dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="614dp"
-                            android:src="@drawable/nemo2" />
-
-        </RelativeLayout>
-
-    </ScrollView>
-</HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

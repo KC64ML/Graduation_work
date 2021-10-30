@@ -16,6 +16,7 @@ import java.util.*
 class ALARM : AppCompatActivity() {
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alarm)
@@ -67,7 +68,7 @@ class ALARM : AppCompatActivity() {
     }
 
     private fun initChangeAlarmTimeButton() {
-        val changeAlarmButton = findViewById<ImageButton>(R.id.changeAlarmTimeButton)
+        val changeAlarmButton = findViewById<Button>(R.id.changeAlarmTimeButton)
         changeAlarmButton.setOnClickListener {
 
             val calendar = Calendar.getInstance()

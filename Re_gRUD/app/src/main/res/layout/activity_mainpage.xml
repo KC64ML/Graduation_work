@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            >
+
+            <View
+
+                android:layout_width="412dp"
+                android:layout_height="870dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="40dp"
+
+                android:src="@drawable/logo_4" />
+
+            <ImageView
+                android:id="@+id/survey_final"
+                android:layout_width="64dp"
+
+                android:layout_height="65dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/kongbu1" />
+
+            <TextView
+                android:layout_width="110dp"
+
+                android:layout_height="61.5dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="406dp"
+                android:fontFamily="@font/font12"
+                android:text="사회 성숙도 검사"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/education_final"
+                android:layout_width="63dp"
+
+                android:layout_height="67dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/edu1123" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="129dp"
+                android:layout_marginTop="406dp"
+                android:fontFamily="@font/font12"
+                android:text="교육 사이트"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/diary_final"
+                android:layout_width="98dp"
+
+                android:layout_height="92dp"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="319dp"
+                android:src="@drawable/diary1" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="31.5dp"
+                android:layout_marginLeft="239dp"
+                android:layout_marginTop="406dp"
+                android:fontFamily="@font/font12"
+                android:text="일기장"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/game_final"
+                android:layout_width="75dp"
+
+                android:layout_height="56dp"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="333dp"
+                android:src="@drawable/game1" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="61.5dp"
+                android:layout_marginLeft="314dp"
+                android:layout_marginTop="406dp"
+                android:fontFamily="@font/font12"
+                android:text="뇌운동 게임"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/location_final"
+                android:layout_width="51dp"
+
+                android:layout_height="58dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="449dp"
+                android:src="@drawable/location1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="52dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="518dp"
+                android:fontFamily="@font/font12"
+                android:text="위치 확인"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/donghwa_final"
+                android:layout_width="64dp"
+
+                android:layout_height="76dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="442dp"
+                android:src="@drawable/donghwa1313" />
+
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="63.5dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="518dp"
+                android:fontFamily="@font/font12"
+                android:text="동화 추천"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/pill_final"
+                android:layout_width="63dp"
+
+                android:layout_height="62dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="448dp"
+                android:src="@drawable/pill123" />
+
+            <TextView
+                android:layout_width="65dp"
+
+                android:layout_height="65.5dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="518dp"
+                android:fontFamily="@font/font12"
+
+                android:text="약 알림"
+                android:textColor="@color/__________color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="412dp"
+
+                android:layout_height="6.3333740234375dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="614dp"
+                android:src="@drawable/nemo2" />
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>
