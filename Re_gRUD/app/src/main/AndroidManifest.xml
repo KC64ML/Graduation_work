@@ -23,7 +23,6 @@
             android:name=".Calender.CalenderActivity"
             android:exported="false" />
 
-
         <activity
             android:name=".Login.Login"
             android:exported="true" />

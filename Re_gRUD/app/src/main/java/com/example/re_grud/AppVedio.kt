@@ -1,8 +1,11 @@
 package com.example.re_grud
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
+import android.widget.MediaController
+import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.re_grud.Alarm.ALARM
 import com.example.re_grud.Login.Login
@@ -15,12 +18,14 @@ class AppVedio : AppCompatActivity() {
 
         var Yes_btn : Button
         var No_btn : Button
+
+
         Yes_btn = findViewById<Button>(R.id.Yes_Button)
         No_btn = findViewById<Button>(R.id.No_Button)
 
         Yes_btn.setOnClickListener{
 
-            val intent = Intent(this, MainActivity_2::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
+            val intent = Intent(this, Login::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
 
             startActivity(intent);
 
@@ -32,7 +37,33 @@ class AppVedio : AppCompatActivity() {
        finish()
    }
 
+        val v: VideoView = findViewById(R.id.videoView2)
 
+        v.setVideoPath("android.resource://com.example.re_grud/"+R.raw.mainvedio)
+
+        v.start()
+
+        v.setOnPreparedListener{
+                m: MediaPlayer ->
+
+            m.setOnVideoSizeChangedListener {
+
+                    m: MediaPlayer?, width:Int, height:Int ->
+
+                val mediaController = MediaController(this)
+
+                v.setMediaController(mediaController)
+
+                mediaController.setAnchorView(v)
+
+
+
+
+
+
+            }
+
+        }
 
 
     }}
