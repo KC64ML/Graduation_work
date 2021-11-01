@@ -14,7 +14,7 @@ class Donghwa_5 : AppCompatActivity() {
 
         val v: VideoView = findViewById(R.id.videoView2)
 
-        v.setVideoPath("android.resource://image11.graduation.ok.com/"+ R.raw.gold)
+      /*  v.setVideoPath("android.resource://image11.graduation.ok.com/"+ R.raw.gold)*/
 
         v.start()
 

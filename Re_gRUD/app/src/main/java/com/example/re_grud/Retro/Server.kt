@@ -1,10 +1,7 @@
 package com.example.re_grud.Retro
 
-import com.example.re_grud.Login.Get_List
-import com.example.re_grud.Login.Login
-import com.example.re_grud.Login.Logindata
+import com.example.re_grud.Login.*
 
-import com.example.re_grud.Login.UserCreationElement
 import com.example.re_grud.Retro.RetroClient.Companion.getInstance
 
 import retrofit2.Call
@@ -21,8 +18,7 @@ interface Server {
     }
     @POST("/user/")
     fun userlogin(@Body user : UserCreationElement):Call<Get_List>
-    fun requestLogin(
-        @Field("userid")userid:String,
-        @Field("userpw")userpw:String
-    ):Call<Logindata>
+
+    @POST("/login/")
+    fun requestLogin(@Body login:Logindata):Call<Get_Login>
 }
