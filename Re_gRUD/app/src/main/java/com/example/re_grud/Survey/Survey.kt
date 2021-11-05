@@ -8,6 +8,7 @@ import com.example.re_grud.MainActivity_2
 import com.example.re_grud.R
 import kotlinx.android.synthetic.main.activity_survey.*
 import kotlinx.android.synthetic.main.activity_survey2.*
+import org.w3c.dom.Text
 
 
 class Survey : AppCompatActivity() {
@@ -17,7 +18,7 @@ class Survey : AppCompatActivity() {
 
         var count2 : Int =  0;
         var textresult : TextView
-
+        var countfinal : Int
         var rg1 : RadioGroup
         var rg2 : RadioGroup
         var rg3 : RadioGroup
@@ -77,10 +78,12 @@ class Survey : AppCompatActivity() {
 
             }
         }
+        countfinal = count2
         nextpage.setOnClickListener {
-
             val intent = Intent(this, Survey_2::class.java)
-            intent.putExtra("JUMSU", count2)
+            intent.putExtra("JUMSU", countfinal.toInt())
+
+
 
             startActivity(intent)
 

@@ -25,8 +25,9 @@
 
         <VideoView
             android:id="@+id/videoView2"
-            android:layout_width="442dp"
-            android:layout_height="223dp"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="0dp"
             android:gravity="top" />
         <TextView
             android:layout_width="wrap_content"
@@ -95,7 +96,7 @@
             >
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/RUMPEL"
                 android:layout_width="170dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -103,21 +104,21 @@
                 app:srcCompat="@drawable/rumpel" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/RatStory"
                 android:layout_width="170dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/rat" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/Horse"
                 android:layout_width="170dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/woddenhorse" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/Bremen"
                 android:layout_width="170dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"

@@ -29,56 +29,8 @@
                     android:layout_height="274.59802246094dp"
 
                     android:layout_marginTop="0dp"
-                    android:contentDescription="_1622122765310_ek1"
-                    android:src="@drawable/backg123" />
 
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="81dp">
-
-                <View
-                    android:id="@+id/join2"
-                    android:layout_width="414dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/white12" />
-
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="12dp">
-
-                    <ImageView
-                        android:layout_width="23.800018310547dp"
-
-                        android:layout_height="15.86669921875dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/pointers1" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:fontFamily="@font/happytfruit"
-                    android:layout_width="110dp"
-                    android:layout_height="41dp"
-                    android:layout_marginLeft="47dp"
-                    android:layout_marginTop="16dp"
-                    android:text="로그 인"
-                    android:textColor="@color/_____color"
-                    android:textSize="28sp" />
+                    android:src="@drawable/logo_4" />
 
             </RelativeLayout>
 
