@@ -78,7 +78,7 @@ class MainActivity_2 : AppCompatActivity() {
             startActivity(intent);
 
         }
-
+   
         main_diary.setOnClickListener {
             val intent = Intent(this, Pass::class.java)
             startActivity(intent)

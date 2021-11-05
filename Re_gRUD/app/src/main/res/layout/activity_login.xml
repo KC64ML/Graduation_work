@@ -105,9 +105,9 @@
                     android:id="@+id/text1"
                     android:layout_width="251dp"
                     android:layout_height="45dp"
-                    android:layout_marginTop="25dp"
                     android:layout_marginLeft="61dp"
-                    android:hint="아이디를 입력하세요"
+                    android:layout_marginTop="25dp"
+                    android:hint="이메일를 입력하세요"
                     android:textColor="@color/_____________________color"
                     android:textSize="17sp" />
 

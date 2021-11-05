@@ -30,7 +30,11 @@ class Memory: AppCompatActivity() {
         val im7 = findViewById<ImageButton>(R.id.im7)
         val im8 = findViewById<ImageButton>(R.id.im8)
 
-        val images = mutableListOf(R.drawable.bus,R.drawable.cake,R.drawable.circle,R.drawable.flash)
+        val images = mutableListOf(
+            R.drawable.bus,
+            R.drawable.cake,
+            R.drawable.circle,
+            R.drawable.flash)
         images.addAll(images)
         //이미지 랜덤화
         images.shuffle()

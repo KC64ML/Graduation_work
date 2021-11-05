@@ -1,27 +1,23 @@
 package com.example.re_grud.Signup
 
-import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.EditText
-import androidx.appcompat.app.AlertDialog
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.re_grud.Login.Get_List
 import com.example.re_grud.Login.Login
 import com.example.re_grud.Login.UserCreationElement
 import com.example.re_grud.R
-import com.example.re_grud.Retro.Server
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class Signup : AppCompatActivity() {
     private val Server = com.example.re_grud.Retro.Server.create()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
@@ -49,11 +45,53 @@ class Signup : AppCompatActivity() {
 
 
 
-            val ucelement = UserCreationElement(
-                username,password,phone,email,family,age,birth
-            )
 
-             Server?.userlogin(ucelement)
+
+            Log.d("에러 첵","길이:${username.length}")
+            if(username.length >45 || username.isEmpty()) {
+                Toast.makeText(this, "아이디 45이하로 입력해주세요", Toast.LENGTH_SHORT).show()
+            }
+            else if (password.length >128 || password.isEmpty()) {
+                Toast.makeText(this, "비밀번호를 128자 이하로 입력해주세요", Toast.LENGTH_SHORT).show()
+            }
+            else if (email.length > 64 || email.isEmpty()){
+                    Toast.makeText(this,"이메일 64자 이하로 입력해주세요",Toast.LENGTH_SHORT).show()
+            }
+            else if(family.length>5 || family.isEmpty()){
+                Toast.makeText(this,"성별 5이하로 입력해주세요",Toast.LENGTH_SHORT).show()
+            }
+            else if(age.length >3|| age.isEmpty()){
+                Toast.makeText(this,"나이를 3 이하로 입력해주세요",Toast.LENGTH_SHORT).show()
+            }
+            else if(birth.length>6||birth.isEmpty()){
+                Toast.makeText(this,"생년월일을 6자이하로 입력해주세요",Toast.LENGTH_SHORT).show()
+            }else {
+                val ucelement = UserCreationElement(
+                    username, password, phone, email, family, age, birth
+                )
+
+
+
+
+                Server?.userlogin(ucelement)?.enqueue(object : Callback<Get_List> {
+                    override fun onResponse(call: Call<Get_List>, response: Response<Get_List>) {
+                        if (response.isSuccessful) {
+
+                            Log.d("tag", "결과:${response.code()}")
+                            Toast.makeText(this@Signup, "회원가입 성공", Toast.LENGTH_SHORT).show()
+                        } else {
+
+                            Log.d("tag", "${response.code().toString()}")
+                            Log.e("tag", "onFailure" + response.message())
+                        }
+                    }
+
+                    override fun onFailure(call: Call<Get_List>, t: Throwable) {
+                        Log.d("tag:", "errora")
+                    }
+                })
+            }
+             /*Server?.userlogin(ucelement)
                  ?.enqueue(object : Callback<Get_List>
                  {
                      override fun onResponse(call: Call<Get_List>, response: Response<Get_List>) {
@@ -75,6 +113,7 @@ class Signup : AppCompatActivity() {
 
 
                  })
+*/
             val intent = Intent(baseContext, Login::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
 
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
