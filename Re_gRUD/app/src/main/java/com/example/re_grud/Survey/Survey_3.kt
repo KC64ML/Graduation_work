@@ -22,6 +22,7 @@ class Survey_3 : AppCompatActivity() {
         var textresult : TextView
         var rg9 : RadioGroup
         var rg10 : RadioGroup
+        var count1234 = 0
 
        textresult = findViewById<TextView>(R.id.result)
         rg9 = findViewById<RadioGroup>(R.id.rg9)
@@ -50,6 +51,10 @@ class Survey_3 : AppCompatActivity() {
 
 
             }
+            var countfinal = intent.getIntExtra("JUMSU1", 0)
+
+            count1234 = countfinal + count
+            textresult.text = count1234.toString() + "점"
            finish1.setOnClickListener {
                intent = Intent(this,MainActivity_2::class.java)
 

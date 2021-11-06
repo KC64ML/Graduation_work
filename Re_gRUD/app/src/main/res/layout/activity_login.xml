@@ -133,27 +133,6 @@
 
             </RelativeLayout>
 
-            <ImageView
-                android:layout_width="35dp"
-
-                android:layout_height="34dp"
-                android:layout_marginStart="43dp"
-                android:layout_marginLeft="43dp"
-                android:layout_marginTop="588dp"
-                android:src="@drawable/naver32" />
-
-
-            <TextView
-                android:id="@+id/naver"
-                android:layout_width="wrap_content"
-                android:layout_height="62dp"
-                android:layout_marginLeft="90dp"
-                android:layout_marginTop="590dp"
-                android:fontFamily="@font/happytfruit"
-                android:text="naver"
-                android:textColor="@color/_____color"
-                android:textSize="23sp" />
-
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -168,98 +147,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
                     android:layout_marginLeft="0dp"
-                    android:layout_marginTop="9dp">
-
-
-                    <RelativeLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="14dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginTop="0dp">
-
-                        <ImageView
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="9dp"
-                            android:layout_marginLeft="9dp"
-                            android:contentDescription="____185"
-                            android:src="@drawable/face" />
-
-                        <View
-
-                            android:layout_width="8dp"
-                            android:layout_height="14dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="-15dp"
-                            android:alpha="0.5"
-                            android:background="@drawable/face" />
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/facebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="62dp"
-                    android:layout_marginLeft="30dp"
-                    android:fontFamily="@font/happytfruit"
-                    android:text="facebook"
-                    android:textColor="@color/_____color"
-                    android:textSize="23sp" />
+                    android:layout_marginTop="9dp"/>
 
             </RelativeLayout>
-
-            <ImageView
-                android:layout_width="26dp"
-                android:layout_height="26dp"
-                android:layout_marginStart="46dp"
-                android:layout_marginLeft="46dp"
-                android:layout_marginTop="657dp"
-                android:contentDescription="_____1"
-                android:src="@drawable/kakao1232" />
-
-            <TextView
-                android:id="@+id/kakao"
-                android:layout_width="118dp"
-                android:layout_height="73dp"
-                android:layout_marginLeft="88dp"
-                android:layout_marginTop="650dp"
-                android:fontFamily="@font/happytfruit"
-                android:text="카카오"
-                android:textColor="@color/_____ek1_color"
-                android:textSize="23sp" />
-
-            <ImageView
-                android:layout_width="24dp"
-
-                android:layout_height="25dp"
-                android:layout_marginStart="246dp"
-                android:layout_marginLeft="246dp"
-                android:layout_marginTop="651dp"
-                android:src="@drawable/google3215" />
-
-            <TextView
-                android:id="@+id/Google"
-                android:layout_width="123dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="285dp"
-                android:layout_marginTop="644dp"
-                android:fontFamily="@font/happytfruit"
-                android:text="Google"
-                android:textColor="@color/_____color"
-                android:textSize="23sp" />
 
             <TextView
                 android:id="@+id/join3"
                 android:layout_width="300dp"
-                android:layout_height="317.5dp"
+                android:layout_height="317dp"
                 android:layout_marginLeft="150dp"
-                android:layout_marginTop="696dp"
+                android:layout_marginTop="600dp"
                 android:fontFamily="@font/happytfruit"
                 android:text="회원 가입"
                 android:textColor="@color/____________________color"

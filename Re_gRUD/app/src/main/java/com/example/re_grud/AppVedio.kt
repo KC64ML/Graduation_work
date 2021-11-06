@@ -26,7 +26,7 @@ class AppVedio : AppCompatActivity() {
 
         Yes_btn.setOnClickListener{
 
-            val intent = Intent(this, MainActivity_2::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
+            val intent = Intent(this, Login::class.java)//다음화면으로 이동하기위한 인텐트 객체생성
 
             startActivity(intent);
 

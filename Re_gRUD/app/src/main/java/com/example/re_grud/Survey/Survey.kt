@@ -78,11 +78,10 @@ class Survey : AppCompatActivity() {
 
             }
         }
-        countfinal = count2
+
         nextpage.setOnClickListener {
             val intent = Intent(this, Survey_2::class.java)
-            intent.putExtra("JUMSU", countfinal.toInt())
-
+            intent.putExtra("JUMSU",count2)
 
 
             startActivity(intent)

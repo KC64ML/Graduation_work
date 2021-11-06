@@ -28,6 +28,7 @@ class Survey_2 : AppCompatActivity() {
         var rg8: RadioGroup
         var countfinal1 : Int
         var Test: Int = 0
+        var count123 = 0;
 
         textresult = findViewById<TextView>(R.id.textresult)
         rg5 = findViewById<RadioGroup>(R.id.rg5)
@@ -87,17 +88,22 @@ class Survey_2 : AppCompatActivity() {
 
             countfinal1 = count1
 
-            nextpage1.setOnClickListener {
+
+                var countfinal1 = intent.getIntExtra("JUMSU", 0)
+                count123 = countfinal1 + count1
+
+
+                nextpage1.setOnClickListener {
+
+
 
                 val intent = Intent(this, Survey_3::class.java)
-
+                    intent.putExtra("JUMSU1", count123)
 
                 startActivity(intent)
             }
 
-            var value1 = intent.getStringExtra("JUMSU")
 
-            textresult.text = " 점수는? " + value1 + countfinal1
 
 
 
