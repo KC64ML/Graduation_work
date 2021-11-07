@@ -68,6 +68,7 @@ Will to do Screen composition, RestApi, settings, etc...
 
 &nbsp;
 
+## 🌴Member
 | 적지TEAM | position                                             |
 | -------- | ---------------------------------------------------- |
 | 이경창   | [backend](https://github.com/lkc263/gd_backend)      |
