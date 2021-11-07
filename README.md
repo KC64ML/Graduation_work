@@ -31,13 +31,14 @@ This is an application for the intellectually disabled.
    Show Video
 
 
+&nbsp;
 
 ## API
 
 * Google Map
 * Firebase
 
-
+&nbsp;
 
 ## Screenshot
 
@@ -52,7 +53,7 @@ This is an application for the intellectually disabled.
 <img src="https://user-images.githubusercontent.com/72541544/140643906-51c51a2f-18ce-4ef8-94af-d9f78d66b631.jpg" width="300" height="500"/><img src="https://user-images.githubusercontent.com/72541544/140644128-aaa4ee72-3792-4540-b299-f1a3f2856429.jpg" width="300" height="500"/>
 
  
-
+&nbsp;
 ### Ever Since...
 
 ****
