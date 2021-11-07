@@ -1,4 +1,11 @@
-## Introduction App
+# 🌺JIJUK APP
+
+<img src="https://user-images.githubusercontent.com/72541544/140645384-2d0f4e1e-1058-4fe8-8d26-cbe46327ad1a.jpg" width="300" height="500"/>
+
+&nbsp;
+
+
+## 🌷Introduction App
 
 This is an application for the intellectually disabled.
 
@@ -30,17 +37,17 @@ This is an application for the intellectually disabled.
 
    Show Video
 
-
 &nbsp;
 
-## API
+
+## 🌼API
 
 * Google Map
 * Firebase
 
 &nbsp;
 
-## Screenshot
+## 🌻Screenshot
 
 <img src="https://user-images.githubusercontent.com/72541544/140643914-ca71ae7b-676d-4b19-9335-9e6c9ca28ecf.jpg" width="300" height="500"/><img src="https://user-images.githubusercontent.com/72541544/140643913-4dd76dcd-810b-462c-a4ba-30cf1c2fb62b.jpg" width="300" height="500"/>
 
@@ -52,25 +59,20 @@ This is an application for the intellectually disabled.
 
 <img src="https://user-images.githubusercontent.com/72541544/140643906-51c51a2f-18ce-4ef8-94af-d9f78d66b631.jpg" width="300" height="500"/><img src="https://user-images.githubusercontent.com/72541544/140644128-aaa4ee72-3792-4540-b299-f1a3f2856429.jpg" width="300" height="500"/>
 
- 
 &nbsp;
-### Ever Since...
 
-****
+## 🌱Ever Since...
 
 Will to do Screen composition, RestApi, settings, etc...
 
 
 &nbsp;
 
-### Member
-***
 | 적지TEAM | position                                             |
 | -------- | ---------------------------------------------------- |
 | 이경창   | [backend](https://github.com/lkc263/gd_backend)      |
 | 이재훈   | [android](https://github.com/lkc263/Graduation_work) |
 | 채승원   | [android](https://github.com/lkc263/Graduation_work) |
-
 
 
 
