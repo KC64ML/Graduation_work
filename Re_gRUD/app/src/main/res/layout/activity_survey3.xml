@@ -92,15 +92,16 @@
                 <RadioGroup
                     android:id="@+id/rg9"
                     android:layout_width="400dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="1350dp"
                     android:orientation="horizontal"
+                    android:layout_marginTop="200dp"
 
                     >
 
                     <RadioButton
                         android:id="@+id/radio41"
                         android:layout_width="80dp"
-                        android:layout_height="400dp"
+                        android:layout_height="22dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/happytfruit"
                         android:text="매우아니다"
@@ -178,15 +179,16 @@
                 <RadioGroup
                     android:id="@+id/rg10"
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1350dp"
                     android:orientation="horizontal"
+                    android:layout_marginTop="365dp"
 
                     >
 
                     <RadioButton
                         android:id="@+id/radio46"
                         android:layout_width="80dp"
-                        android:layout_height="725dp"
+                        android:layout_height="22dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/happytfruit"
                         android:text="매우아니다"
@@ -254,17 +256,16 @@
                 android:text="10"
                 />
 
+
             <TextView
                 android:id="@+id/result"
                 android:textSize="60dp"
                 android:fontFamily="@font/happytfruit"
                 android:layout_width="250dp"
-                android:layout_height="150dp"
+                android:layout_height="155dp"
 
-                android:layout_marginStart="140dp"
+                android:layout_marginStart="145dp"
                 android:layout_marginTop="450dp"/>
-
-
             <TextView
                 android:layout_width="414dp"
                 android:layout_height="158dp"

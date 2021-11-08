@@ -101,15 +101,16 @@
                 <RadioGroup
                     android:id="@+id/rg5"
                     android:layout_width="400dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="1350dp"
                     android:orientation="horizontal"
+                    android:layout_marginTop="200dp"
 
                     >
 
                     <RadioButton
                         android:id="@+id/radio21"
                         android:layout_width="80dp"
-                        android:layout_height="400dp"
+                        android:layout_height="22dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/happytfruit"
                         android:text="매우아니다"
@@ -210,15 +211,16 @@
                 <RadioGroup
                     android:id="@+id/rg6"
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1350dp"
                     android:orientation="horizontal"
+                    android:layout_marginTop="365dp"
 
                     >
 
                     <RadioButton
                         android:id="@+id/radio26"
                         android:layout_width="80dp"
-                        android:layout_height="725dp"
+                        android:layout_height="22dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/happytfruit"
                         android:text="매우아니다"
@@ -305,15 +307,16 @@
                 <RadioGroup
                     android:id="@+id/rg7"
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1350dp"
                     android:orientation="horizontal"
+                    android:layout_marginTop="515dp"
 
                     >
 
                     <RadioButton
                         android:id="@+id/radio31"
                         android:layout_width="80dp"
-                        android:layout_height="1050dp"
+                        android:layout_height="22dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/happytfruit"
                         android:text="매우아니다"
@@ -401,15 +404,16 @@
                 <RadioGroup
                     android:id="@+id/rg8"
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1350dp"
                     android:orientation="horizontal"
+                    android:layout_marginTop="670dp"
 
                     >
 
                     <RadioButton
                         android:id="@+id/radio36"
                         android:layout_width="80dp"
-                        android:layout_height="1350dp"
+                        android:layout_height="22dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/happytfruit"
                         android:text="매우아니다"
@@ -508,4 +512,3 @@
 
     </ScrollView>
 </HorizontalScrollView>
-
